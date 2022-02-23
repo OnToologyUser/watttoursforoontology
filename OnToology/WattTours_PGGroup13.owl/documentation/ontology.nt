@@ -1,0 +1,802 @@
+<http://hw.ac.uk/CW1/WattTours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://hw.ac.uk/CW1/WattTours> <http://www.w3.org/2002/07/owl#imports> <http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl> .
+<http://hw.ac.uk/CW1/WattTours> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
+<http://hw.ac.uk/CW1/WattTours> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology provides support for storing up-to-date information about Watt Tour travel destinations" .
+<http://hw.ac.uk/CW1/WattTours> <http://www.w3.org/2000/01/rdf-schema#label> "WattTour Ontology" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://hw.ac.uk/CW1/WattTours#day
+<http://hw.ac.uk/CW1/WattTours#day> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://hw.ac.uk/CW1/WattTours#week
+<http://hw.ac.uk/CW1/WattTours#week> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2006/time#unitDay
+<http://www.w3.org/2006/time#unitDay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2006/time#unitWeek
+<http://www.w3.org/2006/time#unitWeek> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://hw.ac.uk/CW1/WattTours#TourLenght
+<http://hw.ac.uk/CW1/WattTours#TourLenght> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hw.ac.uk/CW1/WattTours#TourLenght> <http://www.w3.org/2002/07/owl#inverseOf> <http://hw.ac.uk/CW1/WattTours#hasDuration> .
+<http://hw.ac.uk/CW1/WattTours#TourLenght> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://hw.ac.uk/CW1/WattTours#TourLenght> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hw.ac.uk/CW1/WattTours#Duration> .
+<http://hw.ac.uk/CW1/WattTours#TourLenght> <http://www.w3.org/2000/01/rdf-schema#range> <http://hw.ac.uk/CW1/WattTours#Tour> .
+<http://hw.ac.uk/CW1/WattTours#TourLenght> <http://www.w3.org/2000/01/rdf-schema#label> "isDurationOf" .
+# 
+# http://hw.ac.uk/CW1/WattTours#belongTo
+<http://hw.ac.uk/CW1/WattTours#belongTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hw.ac.uk/CW1/WattTours#belongTo> <http://www.w3.org/2002/07/owl#inverseOf> <http://hw.ac.uk/CW1/WattTours#hasCity> .
+<http://hw.ac.uk/CW1/WattTours#belongTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://hw.ac.uk/CW1/WattTours#belongTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hw.ac.uk/CW1/WattTours#City> .
+<http://hw.ac.uk/CW1/WattTours#belongTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://hw.ac.uk/CW1/WattTours#Country> .
+<http://hw.ac.uk/CW1/WattTours#belongTo> <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" .
+<http://hw.ac.uk/CW1/WattTours#belongTo> <http://www.w3.org/2000/01/rdf-schema#comment> "the city belongs to the specified country" .
+<http://hw.ac.uk/CW1/WattTours#belongTo> <http://www.w3.org/2000/01/rdf-schema#label> "belongsTo" .
+# 
+# http://hw.ac.uk/CW1/WattTours#hasCapital
+<http://hw.ac.uk/CW1/WattTours#hasCapital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hw.ac.uk/CW1/WattTours#hasCapital> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hw.ac.uk/CW1/WattTours#hasCity> .
+<http://hw.ac.uk/CW1/WattTours#hasCapital> <http://www.w3.org/2002/07/owl#inverseOf> <http://hw.ac.uk/CW1/WattTours#isCapital> .
+<http://hw.ac.uk/CW1/WattTours#hasCapital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://hw.ac.uk/CW1/WattTours#hasCapital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://hw.ac.uk/CW1/WattTours#hasCapital> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hw.ac.uk/CW1/WattTours#Country> .
+<http://hw.ac.uk/CW1/WattTours#hasCapital> <http://www.w3.org/2000/01/rdf-schema#range> <http://hw.ac.uk/CW1/WattTours#City> .
+<http://hw.ac.uk/CW1/WattTours#hasCapital> <http://www.w3.org/2000/01/rdf-schema#comment> "maurizio colombo" .
+<http://hw.ac.uk/CW1/WattTours#hasCapital> <http://www.w3.org/2000/01/rdf-schema#comment> "the capital of the country is the specified city" .
+<http://hw.ac.uk/CW1/WattTours#hasCapital> <http://www.w3.org/2000/01/rdf-schema#label> "hasCapitalCity" .
+# 
+# http://hw.ac.uk/CW1/WattTours#hasCity
+<http://hw.ac.uk/CW1/WattTours#hasCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hw.ac.uk/CW1/WattTours#hasCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://hw.ac.uk/CW1/WattTours#hasCity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hw.ac.uk/CW1/WattTours#Country> .
+<http://hw.ac.uk/CW1/WattTours#hasCity> <http://www.w3.org/2000/01/rdf-schema#range> <http://hw.ac.uk/CW1/WattTours#City> .
+<http://hw.ac.uk/CW1/WattTours#hasCity> <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" .
+<http://hw.ac.uk/CW1/WattTours#hasCity> <http://www.w3.org/2000/01/rdf-schema#comment> "the country includes the specified city" .
+<http://hw.ac.uk/CW1/WattTours#hasCity> <http://www.w3.org/2000/01/rdf-schema#label> "hasCity" .
+# 
+# http://hw.ac.uk/CW1/WattTours#hasDuration
+<http://hw.ac.uk/CW1/WattTours#hasDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hw.ac.uk/CW1/WattTours#hasDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://hw.ac.uk/CW1/WattTours#hasDuration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hw.ac.uk/CW1/WattTours#Tour> .
+<http://hw.ac.uk/CW1/WattTours#hasDuration> <http://www.w3.org/2000/01/rdf-schema#range> <http://hw.ac.uk/CW1/WattTours#Duration> .
+<http://hw.ac.uk/CW1/WattTours#hasDuration> <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" .
+<http://hw.ac.uk/CW1/WattTours#hasDuration> <http://www.w3.org/2000/01/rdf-schema#comment> "express the duration (days/weeks) of the Tour" .
+<http://hw.ac.uk/CW1/WattTours#hasDuration> <http://www.w3.org/2000/01/rdf-schema#label> "hasDuration" .
+# 
+# http://hw.ac.uk/CW1/WattTours#hasLandMark
+<http://hw.ac.uk/CW1/WattTours#hasLandMark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hw.ac.uk/CW1/WattTours#hasLandMark> <http://www.w3.org/2002/07/owl#inverseOf> <http://hw.ac.uk/CW1/WattTours#lendmarkOf> .
+<http://hw.ac.uk/CW1/WattTours#hasLandMark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://hw.ac.uk/CW1/WattTours#hasLandMark> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hw.ac.uk/CW1/WattTours#City> .
+<http://hw.ac.uk/CW1/WattTours#hasLandMark> <http://www.w3.org/2000/01/rdf-schema#range> <http://hw.ac.uk/CW1/WattTours#Landmark> .
+<http://hw.ac.uk/CW1/WattTours#hasLandMark> <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" .
+<http://hw.ac.uk/CW1/WattTours#hasLandMark> <http://www.w3.org/2000/01/rdf-schema#comment> "the city has the specified landmark" .
+<http://hw.ac.uk/CW1/WattTours#hasLandMark> <http://www.w3.org/2000/01/rdf-schema#label> "hasLandmark" .
+# 
+# http://hw.ac.uk/CW1/WattTours#isCapital
+<http://hw.ac.uk/CW1/WattTours#isCapital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hw.ac.uk/CW1/WattTours#isCapital> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://hw.ac.uk/CW1/WattTours#belongTo> .
+<http://hw.ac.uk/CW1/WattTours#isCapital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://hw.ac.uk/CW1/WattTours#isCapital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://hw.ac.uk/CW1/WattTours#isCapital> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hw.ac.uk/CW1/WattTours#City> .
+<http://hw.ac.uk/CW1/WattTours#isCapital> <http://www.w3.org/2000/01/rdf-schema#range> <http://hw.ac.uk/CW1/WattTours#Country> .
+<http://hw.ac.uk/CW1/WattTours#isCapital> <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" .
+<http://hw.ac.uk/CW1/WattTours#isCapital> <http://www.w3.org/2000/01/rdf-schema#comment> "is the capital city" .
+<http://hw.ac.uk/CW1/WattTours#isCapital> <http://www.w3.org/2000/01/rdf-schema#label> "isCapitalOf" .
+# 
+# http://hw.ac.uk/CW1/WattTours#lendmarkOf
+<http://hw.ac.uk/CW1/WattTours#lendmarkOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hw.ac.uk/CW1/WattTours#lendmarkOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://hw.ac.uk/CW1/WattTours#lendmarkOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hw.ac.uk/CW1/WattTours#Landmark> .
+<http://hw.ac.uk/CW1/WattTours#lendmarkOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://hw.ac.uk/CW1/WattTours#City> .
+<http://hw.ac.uk/CW1/WattTours#lendmarkOf> <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" .
+<http://hw.ac.uk/CW1/WattTours#lendmarkOf> <http://www.w3.org/2000/01/rdf-schema#comment> "the landmark belongs to the specified city" .
+<http://hw.ac.uk/CW1/WattTours#lendmarkOf> <http://www.w3.org/2000/01/rdf-schema#label> "isLandmarkOf" .
+# 
+# http://hw.ac.uk/CW1/WattTours#visited
+<http://hw.ac.uk/CW1/WattTours#visited> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hw.ac.uk/CW1/WattTours#visited> <http://www.w3.org/2002/07/owl#inverseOf> <http://hw.ac.uk/CW1/WattTours#visits> .
+<http://hw.ac.uk/CW1/WattTours#visited> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hw.ac.uk/CW1/WattTours#City> .
+<http://hw.ac.uk/CW1/WattTours#visited> <http://www.w3.org/2000/01/rdf-schema#range> <http://hw.ac.uk/CW1/WattTours#Tour> .
+<http://hw.ac.uk/CW1/WattTours#visited> <http://www.w3.org/2000/01/rdf-schema#label> "isVisited" .
+# 
+# http://hw.ac.uk/CW1/WattTours#visits
+<http://hw.ac.uk/CW1/WattTours#visits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://hw.ac.uk/CW1/WattTours#visits> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hw.ac.uk/CW1/WattTours#Tour> .
+<http://hw.ac.uk/CW1/WattTours#visits> <http://www.w3.org/2000/01/rdf-schema#range> <http://hw.ac.uk/CW1/WattTours#City> .
+<http://hw.ac.uk/CW1/WattTours#visits> <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" .
+<http://hw.ac.uk/CW1/WattTours#visits> <http://www.w3.org/2000/01/rdf-schema#comment> "the tout includes the specified city" .
+<http://hw.ac.uk/CW1/WattTours#visits> <http://www.w3.org/2000/01/rdf-schema#label> "isVisiting" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://hw.ac.uk/CW1/WattTours#cityName
+<http://hw.ac.uk/CW1/WattTours#cityName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://hw.ac.uk/CW1/WattTours#cityName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hw.ac.uk/CW1/WattTours#City> .
+<http://hw.ac.uk/CW1/WattTours#cityName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://hw.ac.uk/CW1/WattTours#cityName> <http://www.w3.org/2000/01/rdf-schema#label> "cityName" .
+# 
+# http://hw.ac.uk/CW1/WattTours#countryName
+<http://hw.ac.uk/CW1/WattTours#countryName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://hw.ac.uk/CW1/WattTours#countryName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hw.ac.uk/CW1/WattTours#Country> .
+<http://hw.ac.uk/CW1/WattTours#countryName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://hw.ac.uk/CW1/WattTours#countryName> <http://www.w3.org/2000/01/rdf-schema#label> "countryName" .
+# 
+# http://hw.ac.uk/CW1/WattTours#days
+<http://hw.ac.uk/CW1/WattTours#days> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://hw.ac.uk/CW1/WattTours#days> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hw.ac.uk/CW1/WattTours#Duration> .
+<http://hw.ac.uk/CW1/WattTours#days> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://hw.ac.uk/CW1/WattTours#days> <http://www.w3.org/2000/01/rdf-schema#label> "days duration" .
+# 
+# http://hw.ac.uk/CW1/WattTours#hasID
+<http://hw.ac.uk/CW1/WattTours#hasID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://hw.ac.uk/CW1/WattTours#hasID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hw.ac.uk/CW1/WattTours#City> .
+<http://hw.ac.uk/CW1/WattTours#hasID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://hw.ac.uk/CW1/WattTours#hasID> <http://www.w3.org/2000/01/rdf-schema#label> "has ID" .
+# 
+# http://hw.ac.uk/CW1/WattTours#weeks
+<http://hw.ac.uk/CW1/WattTours#weeks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://hw.ac.uk/CW1/WattTours#weeks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://hw.ac.uk/CW1/WattTours#Duration> .
+<http://hw.ac.uk/CW1/WattTours#weeks> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://hw.ac.uk/CW1/WattTours#weeks> <http://www.w3.org/2000/01/rdf-schema#label> "weeks duration" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://hw.ac.uk/CW1/WattTours#Attraction
+<http://hw.ac.uk/CW1/WattTours#Attraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hw.ac.uk/CW1/WattTours#Attraction> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#City> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://hw.ac.uk/CW1/WattTours#hasLandMark> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://hw.ac.uk/CW1/WattTours#Landmark> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hw.ac.uk/CW1/WattTours#Attraction> <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" .
+<http://hw.ac.uk/CW1/WattTours#Attraction> <http://www.w3.org/2000/01/rdf-schema#comment> "a city that have some touritistic interest, could be historical site or other" .
+<http://hw.ac.uk/CW1/WattTours#Attraction> <http://www.w3.org/2000/01/rdf-schema#label> "touristicAttraction"@en .
+# 
+# http://hw.ac.uk/CW1/WattTours#Capital
+<http://hw.ac.uk/CW1/WattTours#Capital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hw.ac.uk/CW1/WattTours#Capital> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#City> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://hw.ac.uk/CW1/WattTours#isCapital> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://hw.ac.uk/CW1/WattTours#Country> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://hw.ac.uk/CW1/WattTours#isCapital> .
+_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://hw.ac.uk/CW1/WattTours#Country> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hw.ac.uk/CW1/WattTours#Capital> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hw.ac.uk/CW1/WattTours#City> .
+<http://hw.ac.uk/CW1/WattTours#Capital> <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" .
+<http://hw.ac.uk/CW1/WattTours#Capital> <http://www.w3.org/2000/01/rdf-schema#label> "capitalCity"@en .
+# 
+# http://hw.ac.uk/CW1/WattTours#City
+<http://hw.ac.uk/CW1/WattTours#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hw.ac.uk/CW1/WattTours#City> <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" .
+<http://hw.ac.uk/CW1/WattTours#City> <http://www.w3.org/2000/01/rdf-schema#comment> "possible cities to be included in the tour"@en .
+<http://hw.ac.uk/CW1/WattTours#City> <http://www.w3.org/2000/01/rdf-schema#label> "City"@en .
+# 
+# http://hw.ac.uk/CW1/WattTours#Country
+<http://hw.ac.uk/CW1/WattTours#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hw.ac.uk/CW1/WattTours#Country> <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" .
+<http://hw.ac.uk/CW1/WattTours#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country"@en .
+# 
+# http://hw.ac.uk/CW1/WattTours#Duration
+<http://hw.ac.uk/CW1/WattTours#Duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hw.ac.uk/CW1/WattTours#Duration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid13 <http://www.w3.org/2002/07/owl#unionOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://hw.ac.uk/CW1/WattTours#days> .
+_:genid25 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid25 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://hw.ac.uk/CW1/WattTours#weeks> .
+_:genid23 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid23 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://hw.ac.uk/CW1/WattTours#weeks> .
+_:genid19 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid19 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://hw.ac.uk/CW1/WattTours#days> .
+_:genid17 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid17 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://hw.ac.uk/CW1/WattTours#Duration> <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" .
+<http://hw.ac.uk/CW1/WattTours#Duration> <http://www.w3.org/2000/01/rdf-schema#label> "DurationDescription" .
+# 
+# http://hw.ac.uk/CW1/WattTours#Landmark
+<http://hw.ac.uk/CW1/WattTours#Landmark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hw.ac.uk/CW1/WattTours#Landmark> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid26 <http://www.w3.org/2002/07/owl#unionOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#ManMade> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#Natural> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://hw.ac.uk/CW1/WattTours#Landmark> <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" .
+<http://hw.ac.uk/CW1/WattTours#Landmark> <http://www.w3.org/2000/01/rdf-schema#comment> "it describes city's landamark worth visiting" .
+<http://hw.ac.uk/CW1/WattTours#Landmark> <http://www.w3.org/2000/01/rdf-schema#label> "Landmark"@en .
+# 
+# http://hw.ac.uk/CW1/WattTours#ManMade
+<http://hw.ac.uk/CW1/WattTours#ManMade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hw.ac.uk/CW1/WattTours#ManMade> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hw.ac.uk/CW1/WattTours#Landmark> .
+<http://hw.ac.uk/CW1/WattTours#ManMade> <http://www.w3.org/2002/07/owl#disjointWith> <http://hw.ac.uk/CW1/WattTours#Natural> .
+<http://hw.ac.uk/CW1/WattTours#ManMade> <http://purl.org/dc/elements/1.1/creator> "maurizio colombo"@en .
+<http://hw.ac.uk/CW1/WattTours#ManMade> <http://www.w3.org/2000/01/rdf-schema#comment> "architectural and historical features of a city" .
+<http://hw.ac.uk/CW1/WattTours#ManMade> <http://www.w3.org/2000/01/rdf-schema#label> "ManmadeLandmark"@en .
+# 
+# http://hw.ac.uk/CW1/WattTours#Natural
+<http://hw.ac.uk/CW1/WattTours#Natural> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hw.ac.uk/CW1/WattTours#Natural> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hw.ac.uk/CW1/WattTours#Landmark> .
+<http://hw.ac.uk/CW1/WattTours#Natural> <http://purl.org/dc/elements/1.1/creator> "maurizio colombo"@en .
+<http://hw.ac.uk/CW1/WattTours#Natural> <http://www.w3.org/2000/01/rdf-schema#comment> "natural features" .
+<http://hw.ac.uk/CW1/WattTours#Natural> <http://www.w3.org/2000/01/rdf-schema#label> "NaturalLandmark"@en .
+# 
+# http://hw.ac.uk/CW1/WattTours#Opt1
+<http://hw.ac.uk/CW1/WattTours#Opt1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hw.ac.uk/CW1/WattTours#Opt1> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://hw.ac.uk/CW1/WattTours#hasDuration> .
+_:genid29 <http://www.w3.org/2002/07/owl#hasValue> <http://hw.ac.uk/CW1/WattTours#3Days> .
+<http://hw.ac.uk/CW1/WattTours#Opt1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hw.ac.uk/CW1/WattTours#Tour> .
+<http://hw.ac.uk/CW1/WattTours#Opt1> <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" .
+<http://hw.ac.uk/CW1/WattTours#Opt1> <http://www.w3.org/2000/01/rdf-schema#comment> "package that includes a maximum of 3 cites in 3 days" .
+<http://hw.ac.uk/CW1/WattTours#Opt1> <http://www.w3.org/2000/01/rdf-schema#label> "BasicTour" .
+# 
+# http://hw.ac.uk/CW1/WattTours#Opt2
+<http://hw.ac.uk/CW1/WattTours#Opt2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hw.ac.uk/CW1/WattTours#Opt2> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://hw.ac.uk/CW1/WattTours#hasDuration> .
+_:genid30 <http://www.w3.org/2002/07/owl#hasValue> <http://hw.ac.uk/CW1/WattTours#5Days> .
+<http://hw.ac.uk/CW1/WattTours#Opt2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hw.ac.uk/CW1/WattTours#Tour> .
+<http://hw.ac.uk/CW1/WattTours#Opt2> <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" .
+<http://hw.ac.uk/CW1/WattTours#Opt2> <http://www.w3.org/2000/01/rdf-schema#comment> "package that offers a maximum of 5 cities in 3 days" .
+<http://hw.ac.uk/CW1/WattTours#Opt2> <http://www.w3.org/2000/01/rdf-schema#label> "ShortTour" .
+# 
+# http://hw.ac.uk/CW1/WattTours#Opt3
+<http://hw.ac.uk/CW1/WattTours#Opt3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hw.ac.uk/CW1/WattTours#Opt3> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://hw.ac.uk/CW1/WattTours#hasDuration> .
+_:genid31 <http://www.w3.org/2002/07/owl#hasValue> <http://hw.ac.uk/CW1/WattTours#1Week> .
+<http://hw.ac.uk/CW1/WattTours#Opt3> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hw.ac.uk/CW1/WattTours#Tour> .
+<http://hw.ac.uk/CW1/WattTours#Opt3> <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" .
+<http://hw.ac.uk/CW1/WattTours#Opt3> <http://www.w3.org/2000/01/rdf-schema#comment> "package that offers a maximum of 8 cities in 5 days" .
+<http://hw.ac.uk/CW1/WattTours#Opt3> <http://www.w3.org/2000/01/rdf-schema#label> "LongTour" .
+# 
+# http://hw.ac.uk/CW1/WattTours#Opt4
+<http://hw.ac.uk/CW1/WattTours#Opt4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hw.ac.uk/CW1/WattTours#Opt4> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://hw.ac.uk/CW1/WattTours#hasDuration> .
+_:genid32 <http://www.w3.org/2002/07/owl#hasValue> <http://hw.ac.uk/CW1/WattTours#2Weeks> .
+<http://hw.ac.uk/CW1/WattTours#Opt4> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hw.ac.uk/CW1/WattTours#Tour> .
+<http://hw.ac.uk/CW1/WattTours#Opt4> <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" .
+<http://hw.ac.uk/CW1/WattTours#Opt4> <http://www.w3.org/2000/01/rdf-schema#label> "PremiumTour" .
+# 
+# http://hw.ac.uk/CW1/WattTours#Tour
+<http://hw.ac.uk/CW1/WattTours#Tour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hw.ac.uk/CW1/WattTours#Tour> <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" .
+<http://hw.ac.uk/CW1/WattTours#Tour> <http://www.w3.org/2000/01/rdf-schema#label> "Tour" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://hw.ac.uk/CW1/WattTours#AbuDhabi
+<http://hw.ac.uk/CW1/WattTours#AbuDhabi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#AbuDhabi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#City> .
+<http://hw.ac.uk/CW1/WattTours#AbuDhabi> <http://hw.ac.uk/CW1/WattTours#hasLandMark> <http://hw.ac.uk/CW1/WattTours#FerrariWorld> .
+<http://hw.ac.uk/CW1/WattTours#AbuDhabi> <http://hw.ac.uk/CW1/WattTours#hasLandMark> <http://hw.ac.uk/CW1/WattTours#Louvre> .
+<http://hw.ac.uk/CW1/WattTours#AbuDhabi> <http://hw.ac.uk/CW1/WattTours#hasLandMark> <http://hw.ac.uk/CW1/WattTours#ShZayedMosque> .
+<http://hw.ac.uk/CW1/WattTours#AbuDhabi> <http://hw.ac.uk/CW1/WattTours#isCapital> <http://hw.ac.uk/CW1/WattTours#UAE> .
+<http://hw.ac.uk/CW1/WattTours#AbuDhabi> <http://hw.ac.uk/CW1/WattTours#cityName> "Abu Dhabi"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://hw.ac.uk/CW1/WattTours#AbuDhabi> <http://hw.ac.uk/CW1/WattTours#hasID> "http://www.wikidata.org/entity/Q1519" .
+<http://hw.ac.uk/CW1/WattTours#AbuDhabi> <http://www.w3.org/2000/01/rdf-schema#label> "Abu Dhabi"@en .
+# 
+# http://hw.ac.uk/CW1/WattTours#AlFahidiQtr
+<http://hw.ac.uk/CW1/WattTours#AlFahidiQtr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#AlFahidiQtr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#ManMade> .
+<http://hw.ac.uk/CW1/WattTours#AlFahidiQtr> <http://hw.ac.uk/CW1/WattTours#lendmarkOf> <http://hw.ac.uk/CW1/WattTours#Dubai> .
+<http://hw.ac.uk/CW1/WattTours#AlFahidiQtr> <http://www.w3.org/2000/01/rdf-schema#label> "Al Fahidi Quarter"@en .
+# 
+# http://hw.ac.uk/CW1/WattTours#Bolivia
+<http://hw.ac.uk/CW1/WattTours#Bolivia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#Bolivia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#Country> .
+<http://hw.ac.uk/CW1/WattTours#Bolivia> <http://hw.ac.uk/CW1/WattTours#hasCapital> <http://hw.ac.uk/CW1/WattTours#LaPaz> .
+<http://hw.ac.uk/CW1/WattTours#Bolivia> <http://hw.ac.uk/CW1/WattTours#hasCity> <http://hw.ac.uk/CW1/WattTours#SantaCruz> .
+<http://hw.ac.uk/CW1/WattTours#Bolivia> <http://hw.ac.uk/CW1/WattTours#countryName> "Bolivia" .
+<http://hw.ac.uk/CW1/WattTours#Bolivia> <http://www.w3.org/2000/01/rdf-schema#label> "Bolivia" .
+# 
+# http://hw.ac.uk/CW1/WattTours#BuckPalace
+<http://hw.ac.uk/CW1/WattTours#BuckPalace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#BuckPalace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#ManMade> .
+<http://hw.ac.uk/CW1/WattTours#BuckPalace> <http://hw.ac.uk/CW1/WattTours#lendmarkOf> <http://hw.ac.uk/CW1/WattTours#London> .
+<http://hw.ac.uk/CW1/WattTours#BuckPalace> <http://www.w3.org/2000/01/rdf-schema#label> "Buckingam Palace" .
+# 
+# http://hw.ac.uk/CW1/WattTours#BurjAlArab
+<http://hw.ac.uk/CW1/WattTours#BurjAlArab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#BurjAlArab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#ManMade> .
+<http://hw.ac.uk/CW1/WattTours#BurjAlArab> <http://hw.ac.uk/CW1/WattTours#lendmarkOf> <http://hw.ac.uk/CW1/WattTours#Dubai> .
+<http://hw.ac.uk/CW1/WattTours#BurjAlArab> <http://www.w3.org/2000/01/rdf-schema#label> "Burj AlArab"@en .
+# 
+# http://hw.ac.uk/CW1/WattTours#BurjKhalifa
+<http://hw.ac.uk/CW1/WattTours#BurjKhalifa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#BurjKhalifa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#ManMade> .
+<http://hw.ac.uk/CW1/WattTours#BurjKhalifa> <http://hw.ac.uk/CW1/WattTours#lendmarkOf> <http://hw.ac.uk/CW1/WattTours#Dubai> .
+<http://hw.ac.uk/CW1/WattTours#BurjKhalifa> <http://www.w3.org/2000/01/rdf-schema#label> "Burj Khalifa"@en .
+# 
+# http://hw.ac.uk/CW1/WattTours#Coliseum
+<http://hw.ac.uk/CW1/WattTours#Coliseum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#Coliseum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#ManMade> .
+<http://hw.ac.uk/CW1/WattTours#Coliseum> <http://hw.ac.uk/CW1/WattTours#lendmarkOf> <http://hw.ac.uk/CW1/WattTours#Rome> .
+<http://hw.ac.uk/CW1/WattTours#Coliseum> <http://www.w3.org/2000/01/rdf-schema#label> "Colosseum" .
+# 
+# http://hw.ac.uk/CW1/WattTours#Cortina
+<http://hw.ac.uk/CW1/WattTours#Cortina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#Cortina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#City> .
+<http://hw.ac.uk/CW1/WattTours#Cortina> <http://hw.ac.uk/CW1/WattTours#belongTo> <http://hw.ac.uk/CW1/WattTours#Italy> .
+<http://hw.ac.uk/CW1/WattTours#Cortina> <http://hw.ac.uk/CW1/WattTours#cityName> "Cortina D'Ampezzo"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://hw.ac.uk/CW1/WattTours#Cortina> <http://hw.ac.uk/CW1/WattTours#hasID> "http://www.wikidata.org/entity/Q41158" .
+<http://hw.ac.uk/CW1/WattTours#Cortina> <http://www.w3.org/2000/01/rdf-schema#label> "Cortina D'Ampezzo" .
+# 
+# http://hw.ac.uk/CW1/WattTours#Dubai
+<http://hw.ac.uk/CW1/WattTours#Dubai> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#Dubai> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#City> .
+<http://hw.ac.uk/CW1/WattTours#Dubai> <http://hw.ac.uk/CW1/WattTours#belongTo> <http://hw.ac.uk/CW1/WattTours#UAE> .
+<http://hw.ac.uk/CW1/WattTours#Dubai> <http://hw.ac.uk/CW1/WattTours#hasLandMark> <http://hw.ac.uk/CW1/WattTours#AlFahidiQtr> .
+<http://hw.ac.uk/CW1/WattTours#Dubai> <http://hw.ac.uk/CW1/WattTours#hasLandMark> <http://hw.ac.uk/CW1/WattTours#BurjAlArab> .
+<http://hw.ac.uk/CW1/WattTours#Dubai> <http://hw.ac.uk/CW1/WattTours#hasLandMark> <http://hw.ac.uk/CW1/WattTours#BurjKhalifa> .
+<http://hw.ac.uk/CW1/WattTours#Dubai> <http://hw.ac.uk/CW1/WattTours#hasLandMark> <http://hw.ac.uk/CW1/WattTours#DubaiMuseum> .
+<http://hw.ac.uk/CW1/WattTours#Dubai> <http://hw.ac.uk/CW1/WattTours#cityName> "Dubai"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://hw.ac.uk/CW1/WattTours#Dubai> <http://hw.ac.uk/CW1/WattTours#hasID> "http://www.wikidata.org/entity/Q612" .
+<http://hw.ac.uk/CW1/WattTours#Dubai> <http://www.w3.org/2000/01/rdf-schema#label> "Dubai"@en .
+# 
+# http://hw.ac.uk/CW1/WattTours#DubaiMuseum
+<http://hw.ac.uk/CW1/WattTours#DubaiMuseum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#DubaiMuseum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#ManMade> .
+<http://hw.ac.uk/CW1/WattTours#DubaiMuseum> <http://hw.ac.uk/CW1/WattTours#lendmarkOf> <http://hw.ac.uk/CW1/WattTours#Dubai> .
+<http://hw.ac.uk/CW1/WattTours#DubaiMuseum> <http://www.w3.org/2000/01/rdf-schema#label> "Dubai Museum"@en .
+# 
+# http://hw.ac.uk/CW1/WattTours#FerrariWorld
+<http://hw.ac.uk/CW1/WattTours#FerrariWorld> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#FerrariWorld> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#ManMade> .
+<http://hw.ac.uk/CW1/WattTours#FerrariWorld> <http://hw.ac.uk/CW1/WattTours#lendmarkOf> <http://hw.ac.uk/CW1/WattTours#AbuDhabi> .
+<http://hw.ac.uk/CW1/WattTours#FerrariWorld> <http://www.w3.org/2000/01/rdf-schema#label> "Ferrari World"@en .
+# 
+# http://hw.ac.uk/CW1/WattTours#Florence
+<http://hw.ac.uk/CW1/WattTours#Florence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#Florence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#City> .
+<http://hw.ac.uk/CW1/WattTours#Florence> <http://hw.ac.uk/CW1/WattTours#belongTo> <http://hw.ac.uk/CW1/WattTours#Italy> .
+<http://hw.ac.uk/CW1/WattTours#Florence> <http://hw.ac.uk/CW1/WattTours#cityName> "Firenze" .
+<http://hw.ac.uk/CW1/WattTours#Florence> <http://hw.ac.uk/CW1/WattTours#hasID> "http://www.wikidata.org/entity/Q2044" .
+<http://hw.ac.uk/CW1/WattTours#Florence> <http://www.w3.org/2000/01/rdf-schema#label> "Florence" .
+# 
+# http://hw.ac.uk/CW1/WattTours#Genoa
+<http://hw.ac.uk/CW1/WattTours#Genoa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#Genoa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#City> .
+<http://hw.ac.uk/CW1/WattTours#Genoa> <http://hw.ac.uk/CW1/WattTours#belongTo> <http://hw.ac.uk/CW1/WattTours#Italy> .
+<http://hw.ac.uk/CW1/WattTours#Genoa> <http://hw.ac.uk/CW1/WattTours#cityName> "Genova"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://hw.ac.uk/CW1/WattTours#Genoa> <http://hw.ac.uk/CW1/WattTours#hasID> "http://www.wikidata.org/entity/Q1449" .
+<http://hw.ac.uk/CW1/WattTours#Genoa> <http://www.w3.org/2000/01/rdf-schema#label> "Genova" .
+# 
+# http://hw.ac.uk/CW1/WattTours#HajarWadi
+<http://hw.ac.uk/CW1/WattTours#HajarWadi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#HajarWadi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#Natural> .
+<http://hw.ac.uk/CW1/WattTours#HajarWadi> <http://hw.ac.uk/CW1/WattTours#lendmarkOf> <http://hw.ac.uk/CW1/WattTours#Sharjah> .
+<http://hw.ac.uk/CW1/WattTours#HajarWadi> <http://www.w3.org/2000/01/rdf-schema#label> "Hajar Wadi"@en .
+# 
+# http://hw.ac.uk/CW1/WattTours#Italy
+<http://hw.ac.uk/CW1/WattTours#Italy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#Italy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#Country> .
+<http://hw.ac.uk/CW1/WattTours#Italy> <http://hw.ac.uk/CW1/WattTours#hasCapital> <http://hw.ac.uk/CW1/WattTours#Rome> .
+<http://hw.ac.uk/CW1/WattTours#Italy> <http://hw.ac.uk/CW1/WattTours#hasCity> <http://hw.ac.uk/CW1/WattTours#Florence> .
+<http://hw.ac.uk/CW1/WattTours#Italy> <http://hw.ac.uk/CW1/WattTours#hasCity> <http://hw.ac.uk/CW1/WattTours#Turin> .
+<http://hw.ac.uk/CW1/WattTours#Italy> <http://hw.ac.uk/CW1/WattTours#countryName> "Italia" .
+<http://hw.ac.uk/CW1/WattTours#Italy> <http://www.w3.org/2000/01/rdf-schema#label> "Italy" .
+# 
+# http://hw.ac.uk/CW1/WattTours#LaPaz
+<http://hw.ac.uk/CW1/WattTours#LaPaz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#LaPaz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#City> .
+<http://hw.ac.uk/CW1/WattTours#LaPaz> <http://hw.ac.uk/CW1/WattTours#belongTo> <http://hw.ac.uk/CW1/WattTours#Bolivia> .
+<http://hw.ac.uk/CW1/WattTours#LaPaz> <http://hw.ac.uk/CW1/WattTours#hasLandMark> <http://hw.ac.uk/CW1/WattTours#Tiwanaku> .
+<http://hw.ac.uk/CW1/WattTours#LaPaz> <http://hw.ac.uk/CW1/WattTours#cityName> "La Paz"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://hw.ac.uk/CW1/WattTours#LaPaz> <http://hw.ac.uk/CW1/WattTours#hasID> "http://www.wikidata.org/entity/Q1491" .
+<http://hw.ac.uk/CW1/WattTours#LaPaz> <http://www.w3.org/2000/01/rdf-schema#label> "La Paz" .
+# 
+# http://hw.ac.uk/CW1/WattTours#LonDonEye
+<http://hw.ac.uk/CW1/WattTours#LonDonEye> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#LonDonEye> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#ManMade> .
+<http://hw.ac.uk/CW1/WattTours#LonDonEye> <http://hw.ac.uk/CW1/WattTours#lendmarkOf> <http://hw.ac.uk/CW1/WattTours#London> .
+<http://hw.ac.uk/CW1/WattTours#LonDonEye> <http://www.w3.org/2000/01/rdf-schema#label> "London Eye" .
+# 
+# http://hw.ac.uk/CW1/WattTours#London
+<http://hw.ac.uk/CW1/WattTours#London> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#London> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#City> .
+<http://hw.ac.uk/CW1/WattTours#London> <http://hw.ac.uk/CW1/WattTours#isCapital> <http://hw.ac.uk/CW1/WattTours#UK> .
+<http://hw.ac.uk/CW1/WattTours#London> <http://hw.ac.uk/CW1/WattTours#cityName> "London"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://hw.ac.uk/CW1/WattTours#London> <http://hw.ac.uk/CW1/WattTours#hasID> "http://www.wikidata.org/entity/Q84" .
+# 
+# http://hw.ac.uk/CW1/WattTours#Louvre
+<http://hw.ac.uk/CW1/WattTours#Louvre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#Louvre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#ManMade> .
+<http://hw.ac.uk/CW1/WattTours#Louvre> <http://hw.ac.uk/CW1/WattTours#lendmarkOf> <http://hw.ac.uk/CW1/WattTours#AbuDhabi> .
+<http://hw.ac.uk/CW1/WattTours#Louvre> <http://www.w3.org/2000/01/rdf-schema#label> "Louvre"@en .
+# 
+# http://hw.ac.uk/CW1/WattTours#Montepulciano
+<http://hw.ac.uk/CW1/WattTours#Montepulciano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#Montepulciano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#City> .
+<http://hw.ac.uk/CW1/WattTours#Montepulciano> <http://hw.ac.uk/CW1/WattTours#belongTo> <http://hw.ac.uk/CW1/WattTours#Italy> .
+<http://hw.ac.uk/CW1/WattTours#Montepulciano> <http://hw.ac.uk/CW1/WattTours#cityName> "Montepulciano"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://hw.ac.uk/CW1/WattTours#Montepulciano> <http://hw.ac.uk/CW1/WattTours#hasID> "http://www.wikidata.org/entity/Q91217" .
+# 
+# http://hw.ac.uk/CW1/WattTours#Palermo
+<http://hw.ac.uk/CW1/WattTours#Palermo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#Palermo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#City> .
+<http://hw.ac.uk/CW1/WattTours#Palermo> <http://hw.ac.uk/CW1/WattTours#belongTo> <http://hw.ac.uk/CW1/WattTours#Italy> .
+<http://hw.ac.uk/CW1/WattTours#Palermo> <http://hw.ac.uk/CW1/WattTours#cityName> "Palermo"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://hw.ac.uk/CW1/WattTours#Palermo> <http://hw.ac.uk/CW1/WattTours#hasID> "http://www.wikidata.org/entity/Q2656" .
+# 
+# http://hw.ac.uk/CW1/WattTours#Rome
+<http://hw.ac.uk/CW1/WattTours#Rome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#Rome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#City> .
+<http://hw.ac.uk/CW1/WattTours#Rome> <http://hw.ac.uk/CW1/WattTours#hasLandMark> <http://hw.ac.uk/CW1/WattTours#Coliseum> .
+<http://hw.ac.uk/CW1/WattTours#Rome> <http://hw.ac.uk/CW1/WattTours#isCapital> <http://hw.ac.uk/CW1/WattTours#Italy> .
+<http://hw.ac.uk/CW1/WattTours#Rome> <http://hw.ac.uk/CW1/WattTours#cityName> "Roma" .
+<http://hw.ac.uk/CW1/WattTours#Rome> <http://hw.ac.uk/CW1/WattTours#hasID> "http://www.wikidata.org/entity/Q220" .
+<http://hw.ac.uk/CW1/WattTours#Rome> <http://www.w3.org/2000/01/rdf-schema#label> "Rome" .
+# 
+# http://hw.ac.uk/CW1/WattTours#SantaCruz
+<http://hw.ac.uk/CW1/WattTours#SantaCruz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#SantaCruz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#City> .
+<http://hw.ac.uk/CW1/WattTours#SantaCruz> <http://hw.ac.uk/CW1/WattTours#belongTo> <http://hw.ac.uk/CW1/WattTours#Bolivia> .
+<http://hw.ac.uk/CW1/WattTours#SantaCruz> <http://hw.ac.uk/CW1/WattTours#cityName> "Santa Cruz" .
+<http://hw.ac.uk/CW1/WattTours#SantaCruz> <http://hw.ac.uk/CW1/WattTours#hasID> "http://www.wikidata.org/entity/Q170688" .
+<http://hw.ac.uk/CW1/WattTours#SantaCruz> <http://www.w3.org/2000/01/rdf-schema#label> "Santa Cruz" .
+# 
+# http://hw.ac.uk/CW1/WattTours#ShZayedMosque
+<http://hw.ac.uk/CW1/WattTours#ShZayedMosque> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#ShZayedMosque> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#ManMade> .
+<http://hw.ac.uk/CW1/WattTours#ShZayedMosque> <http://hw.ac.uk/CW1/WattTours#lendmarkOf> <http://hw.ac.uk/CW1/WattTours#AbuDhabi> .
+<http://hw.ac.uk/CW1/WattTours#ShZayedMosque> <http://www.w3.org/2000/01/rdf-schema#label> "Shaikh Zayed Mosque"@en .
+# 
+# http://hw.ac.uk/CW1/WattTours#Sharjah
+<http://hw.ac.uk/CW1/WattTours#Sharjah> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#Sharjah> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#City> .
+<http://hw.ac.uk/CW1/WattTours#Sharjah> <http://hw.ac.uk/CW1/WattTours#belongTo> <http://hw.ac.uk/CW1/WattTours#UAE> .
+<http://hw.ac.uk/CW1/WattTours#Sharjah> <http://hw.ac.uk/CW1/WattTours#hasLandMark> <http://hw.ac.uk/CW1/WattTours#HajarWadi> .
+<http://hw.ac.uk/CW1/WattTours#Sharjah> <http://hw.ac.uk/CW1/WattTours#hasLandMark> <http://hw.ac.uk/CW1/WattTours#SharjahFort> .
+<http://hw.ac.uk/CW1/WattTours#Sharjah> <http://hw.ac.uk/CW1/WattTours#cityName> "Sharjah"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://hw.ac.uk/CW1/WattTours#Sharjah> <http://hw.ac.uk/CW1/WattTours#hasID> "http://www.wikidata.org/entity/Q289693" .
+# 
+# http://hw.ac.uk/CW1/WattTours#SharjahFort
+<http://hw.ac.uk/CW1/WattTours#SharjahFort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#SharjahFort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#ManMade> .
+<http://hw.ac.uk/CW1/WattTours#SharjahFort> <http://hw.ac.uk/CW1/WattTours#lendmarkOf> <http://hw.ac.uk/CW1/WattTours#Sharjah> .
+# 
+# http://hw.ac.uk/CW1/WattTours#Siena
+<http://hw.ac.uk/CW1/WattTours#Siena> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#Siena> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#City> .
+<http://hw.ac.uk/CW1/WattTours#Siena> <http://hw.ac.uk/CW1/WattTours#belongTo> <http://hw.ac.uk/CW1/WattTours#Italy> .
+<http://hw.ac.uk/CW1/WattTours#Siena> <http://hw.ac.uk/CW1/WattTours#hasLandMark> <http://hw.ac.uk/CW1/WattTours#WYards> .
+<http://hw.ac.uk/CW1/WattTours#Siena> <http://hw.ac.uk/CW1/WattTours#cityName> "Siena"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://hw.ac.uk/CW1/WattTours#Siena> <http://hw.ac.uk/CW1/WattTours#hasID> "http://www.wikidata.org/entity/Q2751" .
+# 
+# http://hw.ac.uk/CW1/WattTours#Tiwanaku
+<http://hw.ac.uk/CW1/WattTours#Tiwanaku> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#Tiwanaku> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#ManMade> .
+<http://hw.ac.uk/CW1/WattTours#Tiwanaku> <http://hw.ac.uk/CW1/WattTours#hasLandMark> <http://hw.ac.uk/CW1/WattTours#Tiwanaku> .
+# 
+# http://hw.ac.uk/CW1/WattTours#Tour1
+<http://hw.ac.uk/CW1/WattTours#Tour1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#Tour1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#Opt1> .
+<http://hw.ac.uk/CW1/WattTours#Tour1> <http://hw.ac.uk/CW1/WattTours#hasDuration> <http://hw.ac.uk/CW1/WattTours#3Days> .
+<http://hw.ac.uk/CW1/WattTours#Tour1> <http://hw.ac.uk/CW1/WattTours#visits> <http://hw.ac.uk/CW1/WattTours#Montepulciano> .
+<http://hw.ac.uk/CW1/WattTours#Tour1> <http://hw.ac.uk/CW1/WattTours#visits> <http://hw.ac.uk/CW1/WattTours#Rome> .
+<http://hw.ac.uk/CW1/WattTours#Tour1> <http://hw.ac.uk/CW1/WattTours#visits> <http://hw.ac.uk/CW1/WattTours#Siena> .
+# 
+# http://hw.ac.uk/CW1/WattTours#Tour2
+<http://hw.ac.uk/CW1/WattTours#Tour2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#Tour2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#Opt3> .
+<http://hw.ac.uk/CW1/WattTours#Tour2> <http://hw.ac.uk/CW1/WattTours#hasDuration> <http://hw.ac.uk/CW1/WattTours#1Week> .
+<http://hw.ac.uk/CW1/WattTours#Tour2> <http://hw.ac.uk/CW1/WattTours#visits> <http://hw.ac.uk/CW1/WattTours#Florence> .
+<http://hw.ac.uk/CW1/WattTours#Tour2> <http://hw.ac.uk/CW1/WattTours#visits> <http://hw.ac.uk/CW1/WattTours#Genoa> .
+<http://hw.ac.uk/CW1/WattTours#Tour2> <http://hw.ac.uk/CW1/WattTours#visits> <http://hw.ac.uk/CW1/WattTours#Rome> .
+<http://hw.ac.uk/CW1/WattTours#Tour2> <http://hw.ac.uk/CW1/WattTours#visits> <http://hw.ac.uk/CW1/WattTours#Turin> .
+# 
+# http://hw.ac.uk/CW1/WattTours#Tour3
+<http://hw.ac.uk/CW1/WattTours#Tour3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#Tour3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#Opt2> .
+<http://hw.ac.uk/CW1/WattTours#Tour3> <http://hw.ac.uk/CW1/WattTours#hasDuration> <http://hw.ac.uk/CW1/WattTours#5Days> .
+<http://hw.ac.uk/CW1/WattTours#Tour3> <http://hw.ac.uk/CW1/WattTours#visits> <http://hw.ac.uk/CW1/WattTours#AbuDhabi> .
+<http://hw.ac.uk/CW1/WattTours#Tour3> <http://hw.ac.uk/CW1/WattTours#visits> <http://hw.ac.uk/CW1/WattTours#Dubai> .
+<http://hw.ac.uk/CW1/WattTours#Tour3> <http://hw.ac.uk/CW1/WattTours#visits> <http://hw.ac.uk/CW1/WattTours#Sharjah> .
+<http://hw.ac.uk/CW1/WattTours#Tour3> <http://www.w3.org/2000/01/rdf-schema#label> "Tour3"@en .
+# 
+# http://hw.ac.uk/CW1/WattTours#Tour4
+<http://hw.ac.uk/CW1/WattTours#Tour4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#Tour4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#Opt1> .
+<http://hw.ac.uk/CW1/WattTours#Tour4> <http://hw.ac.uk/CW1/WattTours#hasDuration> <http://hw.ac.uk/CW1/WattTours#3Days> .
+<http://hw.ac.uk/CW1/WattTours#Tour4> <http://hw.ac.uk/CW1/WattTours#visits> <http://hw.ac.uk/CW1/WattTours#LaPaz> .
+<http://hw.ac.uk/CW1/WattTours#Tour4> <http://hw.ac.uk/CW1/WattTours#visits> <http://hw.ac.uk/CW1/WattTours#SantaCruz> .
+# 
+# http://hw.ac.uk/CW1/WattTours#Turin
+<http://hw.ac.uk/CW1/WattTours#Turin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#Turin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#City> .
+<http://hw.ac.uk/CW1/WattTours#Turin> <http://hw.ac.uk/CW1/WattTours#belongTo> <http://hw.ac.uk/CW1/WattTours#Italy> .
+<http://hw.ac.uk/CW1/WattTours#Turin> <http://hw.ac.uk/CW1/WattTours#cityName> "Torino" .
+<http://hw.ac.uk/CW1/WattTours#Turin> <http://hw.ac.uk/CW1/WattTours#hasID> "http://www.wikidata.org/entity/Q495" .
+<http://hw.ac.uk/CW1/WattTours#Turin> <http://www.w3.org/2000/01/rdf-schema#label> "Turin" .
+# 
+# http://hw.ac.uk/CW1/WattTours#UAE
+<http://hw.ac.uk/CW1/WattTours#UAE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#UAE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#Country> .
+<http://hw.ac.uk/CW1/WattTours#UAE> <http://hw.ac.uk/CW1/WattTours#hasCapital> <http://hw.ac.uk/CW1/WattTours#AbuDhabi> .
+<http://hw.ac.uk/CW1/WattTours#UAE> <http://hw.ac.uk/CW1/WattTours#hasCity> <http://hw.ac.uk/CW1/WattTours#Dubai> .
+<http://hw.ac.uk/CW1/WattTours#UAE> <http://hw.ac.uk/CW1/WattTours#hasCity> <http://hw.ac.uk/CW1/WattTours#Sharjah> .
+<http://hw.ac.uk/CW1/WattTours#UAE> <http://hw.ac.uk/CW1/WattTours#countryName> "United Arab Emirates" .
+<http://hw.ac.uk/CW1/WattTours#UAE> <http://www.w3.org/2000/01/rdf-schema#label> "United Arab Emirates"@en .
+# 
+# http://hw.ac.uk/CW1/WattTours#UK
+<http://hw.ac.uk/CW1/WattTours#UK> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#UK> <http://hw.ac.uk/CW1/WattTours#hasCapital> <http://hw.ac.uk/CW1/WattTours#London> .
+<http://hw.ac.uk/CW1/WattTours#UK> <http://www.w3.org/2000/01/rdf-schema#label> "United Kingdom" .
+# 
+# http://hw.ac.uk/CW1/WattTours#WYards
+<http://hw.ac.uk/CW1/WattTours#WYards> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#WYards> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#Natural> .
+<http://hw.ac.uk/CW1/WattTours#WYards> <http://www.w3.org/2000/01/rdf-schema#label> "wineYards" .
+# 
+# http://hw.ac.uk/CW1/WattTours#1Week
+<http://hw.ac.uk/CW1/WattTours#1Week> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#1Week> <http://hw.ac.uk/CW1/WattTours#weeks> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://hw.ac.uk/CW1/WattTours#2Weeks
+<http://hw.ac.uk/CW1/WattTours#2Weeks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#2Weeks> <http://hw.ac.uk/CW1/WattTours#weeks> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://hw.ac.uk/CW1/WattTours#3Days
+<http://hw.ac.uk/CW1/WattTours#3Days> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#3Days> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hw.ac.uk/CW1/WattTours#Duration> .
+<http://hw.ac.uk/CW1/WattTours#3Days> <http://hw.ac.uk/CW1/WattTours#days> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://hw.ac.uk/CW1/WattTours#5Days
+<http://hw.ac.uk/CW1/WattTours#5Days> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://hw.ac.uk/CW1/WattTours#5Days> <http://hw.ac.uk/CW1/WattTours#days> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid33 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#Coliseum> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#LonDonEye> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#WYards> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid37 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#Coliseum> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#WYards> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid40 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#Florence> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid42 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#Italy> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#UAE> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid45 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#Italy> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#UK> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid48 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#Tour1> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#Tour2> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid51 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#Tour1> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#Tour3> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid54 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#Tour1> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#Tour4> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid57 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#Tour2> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#Tour3> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid60 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#Tour2> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#Tour4> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid63 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#Tour3> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#Tour4> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid66 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#UAE> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#UK> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid69 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#1Week> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#2Weeks> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#3Days> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://hw.ac.uk/CW1/WattTours#5Days> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

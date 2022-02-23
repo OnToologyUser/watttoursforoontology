@@ -1,0 +1,794 @@
+@prefix : <http://hw.ac.uk/CW1/WattTours#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://hw.ac.uk/CW1/WattTours> .
+
+<http://hw.ac.uk/CW1/WattTours> rdf:type owl:Ontology ;
+                                 owl:imports <http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl> ;
+                                 <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> ;
+                                 rdfs:comment "This ontology provides support for storing up-to-date information about Watt Tour travel destinations" ;
+                                 rdfs:label "WattTour Ontology" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://hw.ac.uk/CW1/WattTours#day
+:day rdf:type rdfs:Datatype .
+
+
+###  http://hw.ac.uk/CW1/WattTours#week
+:week rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2006/time#unitDay
+<http://www.w3.org/2006/time#unitDay> rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2006/time#unitWeek
+<http://www.w3.org/2006/time#unitWeek> rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://hw.ac.uk/CW1/WattTours#TourLenght
+:TourLenght rdf:type owl:ObjectProperty ;
+            owl:inverseOf :hasDuration ;
+            rdf:type owl:InverseFunctionalProperty ;
+            rdfs:domain :Duration ;
+            rdfs:range :Tour ;
+            rdfs:label "isDurationOf" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#belongTo
+:belongTo rdf:type owl:ObjectProperty ;
+          owl:inverseOf :hasCity ;
+          rdf:type owl:FunctionalProperty ;
+          rdfs:domain :City ;
+          rdfs:range :Country ;
+          <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" ;
+          rdfs:comment "the city belongs to the specified country" ;
+          rdfs:label "belongsTo" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#hasCapital
+:hasCapital rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :hasCity ;
+            owl:inverseOf :isCapital ;
+            rdf:type owl:FunctionalProperty ,
+                     owl:InverseFunctionalProperty ;
+            rdfs:domain :Country ;
+            rdfs:range :City ;
+            rdfs:comment "maurizio colombo" ,
+                         "the capital of the country is the specified city" ;
+            rdfs:label "hasCapitalCity" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#hasCity
+:hasCity rdf:type owl:ObjectProperty ,
+                  owl:InverseFunctionalProperty ;
+         rdfs:domain :Country ;
+         rdfs:range :City ;
+         <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" ;
+         rdfs:comment "the country includes the specified city" ;
+         rdfs:label "hasCity" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#hasDuration
+:hasDuration rdf:type owl:ObjectProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :Tour ;
+             rdfs:range :Duration ;
+             <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" ;
+             rdfs:comment "express the duration (days/weeks) of the Tour" ;
+             rdfs:label "hasDuration" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#hasLandMark
+:hasLandMark rdf:type owl:ObjectProperty ;
+             owl:inverseOf :lendmarkOf ;
+             rdf:type owl:InverseFunctionalProperty ;
+             rdfs:domain :City ;
+             rdfs:range :Landmark ;
+             <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" ;
+             rdfs:comment "the city has the specified landmark" ;
+             rdfs:label "hasLandmark" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#isCapital
+:isCapital rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :belongTo ;
+           rdf:type owl:FunctionalProperty ,
+                    owl:InverseFunctionalProperty ;
+           rdfs:domain :City ;
+           rdfs:range :Country ;
+           <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" ;
+           rdfs:comment "is the capital city" ;
+           rdfs:label "isCapitalOf" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#lendmarkOf
+:lendmarkOf rdf:type owl:ObjectProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :Landmark ;
+            rdfs:range :City ;
+            <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" ;
+            rdfs:comment "the landmark belongs to the specified city" ;
+            rdfs:label "isLandmarkOf" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#visited
+:visited rdf:type owl:ObjectProperty ;
+         owl:inverseOf :visits ;
+         rdfs:domain :City ;
+         rdfs:range :Tour ;
+         rdfs:label "isVisited" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#visits
+:visits rdf:type owl:ObjectProperty ;
+        rdfs:domain :Tour ;
+        rdfs:range :City ;
+        <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" ;
+        rdfs:comment "the tout includes the specified city" ;
+        rdfs:label "isVisiting" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://hw.ac.uk/CW1/WattTours#cityName
+:cityName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :City ;
+          rdfs:range xsd:string ;
+          rdfs:label "cityName" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#countryName
+:countryName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Country ;
+             rdfs:range xsd:string ;
+             rdfs:label "countryName" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#days
+:days rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Duration ;
+      rdfs:range xsd:integer ;
+      rdfs:label "days duration" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#hasID
+:hasID rdf:type owl:DatatypeProperty ;
+       rdfs:domain :City ;
+       rdfs:range xsd:string ;
+       rdfs:label "has ID" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#weeks
+:weeks rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Duration ;
+       rdfs:range xsd:integer ;
+       rdfs:label "weeks duration" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://hw.ac.uk/CW1/WattTours#Attraction
+:Attraction rdf:type owl:Class ;
+            owl:equivalentClass [ owl:intersectionOf ( :City
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :hasLandMark ;
+                                                         owl:someValuesFrom :Landmark
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+            <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" ;
+            rdfs:comment "a city that have some touritistic interest, could be historical site or other" ;
+            rdfs:label "touristicAttraction"@en .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Capital
+:Capital rdf:type owl:Class ;
+         owl:equivalentClass [ owl:intersectionOf ( :City
+                                                    [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :isCapital ;
+                                                                             owl:someValuesFrom :Country
+                                                                           ]
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :isCapital ;
+                                                                             owl:allValuesFrom :Country
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ;
+         rdfs:subClassOf :City ;
+         <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" ;
+         rdfs:label "capitalCity"@en .
+
+
+###  http://hw.ac.uk/CW1/WattTours#City
+:City rdf:type owl:Class ;
+      <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" ;
+      rdfs:comment "possible cities to be included in the tour"@en ;
+      rdfs:label "City"@en .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Country
+:Country rdf:type owl:Class ;
+         <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" ;
+         rdfs:label "Country"@en .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Duration
+:Duration rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Class ;
+                            owl:unionOf ( [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :days ;
+                                                                   owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                                                   owl:onDataRange xsd:decimal
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :weeks ;
+                                                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                   owl:onDataRange xsd:decimal
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ]
+                                          [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :weeks ;
+                                                                   owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                                                   owl:onDataRange xsd:decimal
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :days ;
+                                                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                   owl:onDataRange xsd:decimal
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ]
+                                        )
+                          ] ;
+          <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" ;
+          rdfs:label "DurationDescription" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Landmark
+:Landmark rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Class ;
+                                owl:unionOf ( :ManMade
+                                              :Natural
+                                            )
+                              ] ;
+          <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" ;
+          rdfs:comment "it describes city's landamark worth visiting" ;
+          rdfs:label "Landmark"@en .
+
+
+###  http://hw.ac.uk/CW1/WattTours#ManMade
+:ManMade rdf:type owl:Class ;
+         rdfs:subClassOf :Landmark ;
+         owl:disjointWith :Natural ;
+         <http://purl.org/dc/elements/1.1/creator> "maurizio colombo"@en ;
+         rdfs:comment "architectural and historical features of a city" ;
+         rdfs:label "ManmadeLandmark"@en .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Natural
+:Natural rdf:type owl:Class ;
+         rdfs:subClassOf :Landmark ;
+         <http://purl.org/dc/elements/1.1/creator> "maurizio colombo"@en ;
+         rdfs:comment "natural features" ;
+         rdfs:label "NaturalLandmark"@en .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Opt1
+:Opt1 rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasDuration ;
+                            owl:hasValue <http://hw.ac.uk/CW1/WattTours#3Days>
+                          ] ;
+      rdfs:subClassOf :Tour ;
+      <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" ;
+      rdfs:comment "package that includes a maximum of 3 cites in 3 days" ;
+      rdfs:label "BasicTour" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Opt2
+:Opt2 rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasDuration ;
+                            owl:hasValue <http://hw.ac.uk/CW1/WattTours#5Days>
+                          ] ;
+      rdfs:subClassOf :Tour ;
+      <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" ;
+      rdfs:comment "package that offers a maximum of 5 cities in 3 days" ;
+      rdfs:label "ShortTour" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Opt3
+:Opt3 rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasDuration ;
+                            owl:hasValue <http://hw.ac.uk/CW1/WattTours#1Week>
+                          ] ;
+      rdfs:subClassOf :Tour ;
+      <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" ;
+      rdfs:comment "package that offers a maximum of 8 cities in 5 days" ;
+      rdfs:label "LongTour" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Opt4
+:Opt4 rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasDuration ;
+                            owl:hasValue <http://hw.ac.uk/CW1/WattTours#2Weeks>
+                          ] ;
+      rdfs:subClassOf :Tour ;
+      <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" ;
+      rdfs:label "PremiumTour" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Tour
+:Tour rdf:type owl:Class ;
+      <http://purl.org/dc/elements/1.1/creator> "maurizio colombo" ;
+      rdfs:label "Tour" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://hw.ac.uk/CW1/WattTours#AbuDhabi
+:AbuDhabi rdf:type owl:NamedIndividual ,
+                   :City ;
+          :hasLandMark :FerrariWorld ,
+                       :Louvre ,
+                       :ShZayedMosque ;
+          :isCapital :UAE ;
+          :cityName "Abu Dhabi"^^rdfs:Literal ;
+          :hasID "http://www.wikidata.org/entity/Q1519" ;
+          rdfs:label "Abu Dhabi"@en .
+
+
+###  http://hw.ac.uk/CW1/WattTours#AlFahidiQtr
+:AlFahidiQtr rdf:type owl:NamedIndividual ,
+                      :ManMade ;
+             :lendmarkOf :Dubai ;
+             rdfs:label "Al Fahidi Quarter"@en .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Bolivia
+:Bolivia rdf:type owl:NamedIndividual ,
+                  :Country ;
+         :hasCapital :LaPaz ;
+         :hasCity :SantaCruz ;
+         :countryName "Bolivia" ;
+         rdfs:label "Bolivia" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#BuckPalace
+:BuckPalace rdf:type owl:NamedIndividual ,
+                     :ManMade ;
+            :lendmarkOf :London ;
+            rdfs:label "Buckingam Palace" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#BurjAlArab
+:BurjAlArab rdf:type owl:NamedIndividual ,
+                     :ManMade ;
+            :lendmarkOf :Dubai ;
+            rdfs:label "Burj AlArab"@en .
+
+
+###  http://hw.ac.uk/CW1/WattTours#BurjKhalifa
+:BurjKhalifa rdf:type owl:NamedIndividual ,
+                      :ManMade ;
+             :lendmarkOf :Dubai ;
+             rdfs:label "Burj Khalifa"@en .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Coliseum
+:Coliseum rdf:type owl:NamedIndividual ,
+                   :ManMade ;
+          :lendmarkOf :Rome ;
+          rdfs:label "Colosseum" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Cortina
+:Cortina rdf:type owl:NamedIndividual ,
+                  :City ;
+         :belongTo :Italy ;
+         :cityName "Cortina D'Ampezzo"^^rdfs:Literal ;
+         :hasID "http://www.wikidata.org/entity/Q41158" ;
+         rdfs:label "Cortina D'Ampezzo" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Dubai
+:Dubai rdf:type owl:NamedIndividual ,
+                :City ;
+       :belongTo :UAE ;
+       :hasLandMark :AlFahidiQtr ,
+                    :BurjAlArab ,
+                    :BurjKhalifa ,
+                    :DubaiMuseum ;
+       :cityName "Dubai"^^rdfs:Literal ;
+       :hasID "http://www.wikidata.org/entity/Q612" ;
+       rdfs:label "Dubai"@en .
+
+
+###  http://hw.ac.uk/CW1/WattTours#DubaiMuseum
+:DubaiMuseum rdf:type owl:NamedIndividual ,
+                      :ManMade ;
+             :lendmarkOf :Dubai ;
+             rdfs:label "Dubai Museum"@en .
+
+
+###  http://hw.ac.uk/CW1/WattTours#FerrariWorld
+:FerrariWorld rdf:type owl:NamedIndividual ,
+                       :ManMade ;
+              :lendmarkOf :AbuDhabi ;
+              rdfs:label "Ferrari World"@en .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Florence
+:Florence rdf:type owl:NamedIndividual ,
+                   :City ;
+          :belongTo :Italy ;
+          :cityName "Firenze" ;
+          :hasID "http://www.wikidata.org/entity/Q2044" ;
+          rdfs:label "Florence" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Genoa
+:Genoa rdf:type owl:NamedIndividual ,
+                :City ;
+       :belongTo :Italy ;
+       :cityName "Genova"^^rdfs:Literal ;
+       :hasID "http://www.wikidata.org/entity/Q1449" ;
+       rdfs:label "Genova" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#HajarWadi
+:HajarWadi rdf:type owl:NamedIndividual ,
+                    :Natural ;
+           :lendmarkOf :Sharjah ;
+           rdfs:label "Hajar Wadi"@en .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Italy
+:Italy rdf:type owl:NamedIndividual ,
+                :Country ;
+       :hasCapital :Rome ;
+       :hasCity :Florence ,
+                :Turin ;
+       :countryName "Italia" ;
+       rdfs:label "Italy" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#LaPaz
+:LaPaz rdf:type owl:NamedIndividual ,
+                :City ;
+       :belongTo :Bolivia ;
+       :hasLandMark :Tiwanaku ;
+       :cityName "La Paz"^^rdfs:Literal ;
+       :hasID "http://www.wikidata.org/entity/Q1491" ;
+       rdfs:label "La Paz" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#LonDonEye
+:LonDonEye rdf:type owl:NamedIndividual ,
+                    :ManMade ;
+           :lendmarkOf :London ;
+           rdfs:label "London Eye" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#London
+:London rdf:type owl:NamedIndividual ,
+                 :City ;
+        :isCapital :UK ;
+        :cityName "London"^^rdfs:Literal ;
+        :hasID "http://www.wikidata.org/entity/Q84" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Louvre
+:Louvre rdf:type owl:NamedIndividual ,
+                 :ManMade ;
+        :lendmarkOf :AbuDhabi ;
+        rdfs:label "Louvre"@en .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Montepulciano
+:Montepulciano rdf:type owl:NamedIndividual ,
+                        :City ;
+               :belongTo :Italy ;
+               :cityName "Montepulciano"^^rdfs:Literal ;
+               :hasID "http://www.wikidata.org/entity/Q91217" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Palermo
+:Palermo rdf:type owl:NamedIndividual ,
+                  :City ;
+         :belongTo :Italy ;
+         :cityName "Palermo"^^rdfs:Literal ;
+         :hasID "http://www.wikidata.org/entity/Q2656" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Rome
+:Rome rdf:type owl:NamedIndividual ,
+               :City ;
+      :hasLandMark :Coliseum ;
+      :isCapital :Italy ;
+      :cityName "Roma" ;
+      :hasID "http://www.wikidata.org/entity/Q220" ;
+      rdfs:label "Rome" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#SantaCruz
+:SantaCruz rdf:type owl:NamedIndividual ,
+                    :City ;
+           :belongTo :Bolivia ;
+           :cityName "Santa Cruz" ;
+           :hasID "http://www.wikidata.org/entity/Q170688" ;
+           rdfs:label "Santa Cruz" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#ShZayedMosque
+:ShZayedMosque rdf:type owl:NamedIndividual ,
+                        :ManMade ;
+               :lendmarkOf :AbuDhabi ;
+               rdfs:label "Shaikh Zayed Mosque"@en .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Sharjah
+:Sharjah rdf:type owl:NamedIndividual ,
+                  :City ;
+         :belongTo :UAE ;
+         :hasLandMark :HajarWadi ,
+                      :SharjahFort ;
+         :cityName "Sharjah"^^rdfs:Literal ;
+         :hasID "http://www.wikidata.org/entity/Q289693" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#SharjahFort
+:SharjahFort rdf:type owl:NamedIndividual ,
+                      :ManMade ;
+             :lendmarkOf :Sharjah .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Siena
+:Siena rdf:type owl:NamedIndividual ,
+                :City ;
+       :belongTo :Italy ;
+       :hasLandMark :WYards ;
+       :cityName "Siena"^^rdfs:Literal ;
+       :hasID "http://www.wikidata.org/entity/Q2751" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Tiwanaku
+:Tiwanaku rdf:type owl:NamedIndividual ,
+                   :ManMade ;
+          :hasLandMark :Tiwanaku .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Tour1
+:Tour1 rdf:type owl:NamedIndividual ,
+                :Opt1 ;
+       :hasDuration <http://hw.ac.uk/CW1/WattTours#3Days> ;
+       :visits :Montepulciano ,
+               :Rome ,
+               :Siena .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Tour2
+:Tour2 rdf:type owl:NamedIndividual ,
+                :Opt3 ;
+       :hasDuration <http://hw.ac.uk/CW1/WattTours#1Week> ;
+       :visits :Florence ,
+               :Genoa ,
+               :Rome ,
+               :Turin .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Tour3
+:Tour3 rdf:type owl:NamedIndividual ,
+                :Opt2 ;
+       :hasDuration <http://hw.ac.uk/CW1/WattTours#5Days> ;
+       :visits :AbuDhabi ,
+               :Dubai ,
+               :Sharjah ;
+       rdfs:label "Tour3"@en .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Tour4
+:Tour4 rdf:type owl:NamedIndividual ,
+                :Opt1 ;
+       :hasDuration <http://hw.ac.uk/CW1/WattTours#3Days> ;
+       :visits :LaPaz ,
+               :SantaCruz .
+
+
+###  http://hw.ac.uk/CW1/WattTours#Turin
+:Turin rdf:type owl:NamedIndividual ,
+                :City ;
+       :belongTo :Italy ;
+       :cityName "Torino" ;
+       :hasID "http://www.wikidata.org/entity/Q495" ;
+       rdfs:label "Turin" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#UAE
+:UAE rdf:type owl:NamedIndividual ,
+              :Country ;
+     :hasCapital :AbuDhabi ;
+     :hasCity :Dubai ,
+              :Sharjah ;
+     :countryName "United Arab Emirates" ;
+     rdfs:label "United Arab Emirates"@en .
+
+
+###  http://hw.ac.uk/CW1/WattTours#UK
+:UK rdf:type owl:NamedIndividual ;
+    :hasCapital :London ;
+    rdfs:label "United Kingdom" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#WYards
+:WYards rdf:type owl:NamedIndividual ,
+                 :Natural ;
+        rdfs:label "wineYards" .
+
+
+###  http://hw.ac.uk/CW1/WattTours#1Week
+<http://hw.ac.uk/CW1/WattTours#1Week> rdf:type owl:NamedIndividual ;
+                                      :weeks 1 .
+
+
+###  http://hw.ac.uk/CW1/WattTours#2Weeks
+<http://hw.ac.uk/CW1/WattTours#2Weeks> rdf:type owl:NamedIndividual ;
+                                       :weeks 2 .
+
+
+###  http://hw.ac.uk/CW1/WattTours#3Days
+<http://hw.ac.uk/CW1/WattTours#3Days> rdf:type owl:NamedIndividual ,
+                                               :Duration ;
+                                      :days 3 .
+
+
+###  http://hw.ac.uk/CW1/WattTours#5Days
+<http://hw.ac.uk/CW1/WattTours#5Days> rdf:type owl:NamedIndividual ;
+                                      :days 5 .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Coliseum
+                        :LonDonEye
+                        :WYards
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Coliseum
+                        :WYards
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Florence
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Italy
+                        :UAE
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Italy
+                        :UK
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Tour1
+                        :Tour2
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Tour1
+                        :Tour3
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Tour1
+                        :Tour4
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Tour2
+                        :Tour3
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Tour2
+                        :Tour4
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Tour3
+                        :Tour4
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :UAE
+                        :UK
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( <http://hw.ac.uk/CW1/WattTours#1Week>
+                        <http://hw.ac.uk/CW1/WattTours#2Weeks>
+                        <http://hw.ac.uk/CW1/WattTours#3Days>
+                        <http://hw.ac.uk/CW1/WattTours#5Days>
+                      )
+] .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

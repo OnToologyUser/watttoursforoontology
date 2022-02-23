@@ -1,0 +1,1311 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#City"
+    }, {
+      "@id" : "_:genid3"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#isCapital"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Country"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid21"
+    }, {
+      "@id" : "_:genid15"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid19"
+    }, {
+      "@id" : "_:genid17"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#days"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#weeks"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid25"
+    }, {
+      "@id" : "_:genid23"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#weeks"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#days"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#ManMade"
+    }, {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Natural"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#3Days"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#hasDuration"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#hasLandMark"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Landmark"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#5Days"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#hasDuration"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#1Week"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#hasDuration"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#2Weeks"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#hasDuration"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Coliseum"
+    }, {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#LonDonEye"
+    }, {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#WYards"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Coliseum"
+    }, {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#WYards"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Florence"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Italy"
+    }, {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#UAE"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Italy"
+    }, {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#UK"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Tour1"
+    }, {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Tour2"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#City"
+    }, {
+      "@id" : "_:genid7"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Tour1"
+    }, {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Tour3"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Tour1"
+    }, {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Tour4"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid57",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Tour2"
+    }, {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Tour3"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Tour2"
+    }, {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Tour4"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid63",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Tour3"
+    }, {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Tour4"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid66",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#UAE"
+    }, {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#UK"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid69",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#1Week"
+    }, {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#2Weeks"
+    }, {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#3Days"
+    }, {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#5Days"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid11"
+    }, {
+      "@id" : "_:genid9"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Country"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#isCapital"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This ontology provides support for storing up-to-date information about Watt Tour travel destinations"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "WattTour Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#1Week",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://hw.ac.uk/CW1/WattTours#weeks" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#2Weeks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://hw.ac.uk/CW1/WattTours#weeks" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#3Days",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#Duration" ],
+  "http://hw.ac.uk/CW1/WattTours#days" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#5Days",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://hw.ac.uk/CW1/WattTours#days" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "5"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#AbuDhabi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#City" ],
+  "http://hw.ac.uk/CW1/WattTours#cityName" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Abu Dhabi"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#hasID" : [ {
+    "@value" : "http://www.wikidata.org/entity/Q1519"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#hasLandMark" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#FerrariWorld"
+  }, {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Louvre"
+  }, {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#ShZayedMosque"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#isCapital" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#UAE"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Abu Dhabi"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#AlFahidiQtr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#ManMade" ],
+  "http://hw.ac.uk/CW1/WattTours#lendmarkOf" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Dubai"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Al Fahidi Quarter"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Attraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "maurizio colombo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a city that have some touritistic interest, could be historical site or other"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "touristicAttraction"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Bolivia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#Country" ],
+  "http://hw.ac.uk/CW1/WattTours#countryName" : [ {
+    "@value" : "Bolivia"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#hasCapital" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#LaPaz"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#hasCity" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#SantaCruz"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bolivia"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#BuckPalace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#ManMade" ],
+  "http://hw.ac.uk/CW1/WattTours#lendmarkOf" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#London"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Buckingam Palace"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#BurjAlArab",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#ManMade" ],
+  "http://hw.ac.uk/CW1/WattTours#lendmarkOf" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Dubai"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Burj AlArab"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#BurjKhalifa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#ManMade" ],
+  "http://hw.ac.uk/CW1/WattTours#lendmarkOf" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Dubai"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Burj Khalifa"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Capital",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "maurizio colombo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "capitalCity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#City"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#City",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "maurizio colombo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "possible cities to be included in the tour"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "City"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Coliseum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#ManMade" ],
+  "http://hw.ac.uk/CW1/WattTours#lendmarkOf" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Rome"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Colosseum"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Cortina",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#City" ],
+  "http://hw.ac.uk/CW1/WattTours#belongTo" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Italy"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#cityName" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Cortina D'Ampezzo"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#hasID" : [ {
+    "@value" : "http://www.wikidata.org/entity/Q41158"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cortina D'Ampezzo"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "maurizio colombo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Country"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Dubai",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#City" ],
+  "http://hw.ac.uk/CW1/WattTours#belongTo" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#UAE"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#cityName" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Dubai"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#hasID" : [ {
+    "@value" : "http://www.wikidata.org/entity/Q612"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#hasLandMark" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#AlFahidiQtr"
+  }, {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#BurjAlArab"
+  }, {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#BurjKhalifa"
+  }, {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#DubaiMuseum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dubai"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#DubaiMuseum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#ManMade" ],
+  "http://hw.ac.uk/CW1/WattTours#lendmarkOf" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Dubai"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dubai Museum"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Duration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "maurizio colombo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DurationDescription"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#FerrariWorld",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#ManMade" ],
+  "http://hw.ac.uk/CW1/WattTours#lendmarkOf" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#AbuDhabi"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ferrari World"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Florence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#City" ],
+  "http://hw.ac.uk/CW1/WattTours#belongTo" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Italy"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#cityName" : [ {
+    "@value" : "Firenze"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#hasID" : [ {
+    "@value" : "http://www.wikidata.org/entity/Q2044"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Florence"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Genoa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#City" ],
+  "http://hw.ac.uk/CW1/WattTours#belongTo" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Italy"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#cityName" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Genova"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#hasID" : [ {
+    "@value" : "http://www.wikidata.org/entity/Q1449"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Genova"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#HajarWadi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#Natural" ],
+  "http://hw.ac.uk/CW1/WattTours#lendmarkOf" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Sharjah"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hajar Wadi"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Italy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#Country" ],
+  "http://hw.ac.uk/CW1/WattTours#countryName" : [ {
+    "@value" : "Italia"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#hasCapital" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Rome"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#hasCity" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Florence"
+  }, {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Turin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Italy"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#LaPaz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#City" ],
+  "http://hw.ac.uk/CW1/WattTours#belongTo" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Bolivia"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#cityName" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "La Paz"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#hasID" : [ {
+    "@value" : "http://www.wikidata.org/entity/Q1491"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#hasLandMark" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Tiwanaku"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "La Paz"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Landmark",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "maurizio colombo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "it describes city's landamark worth visiting"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Landmark"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid26"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#LonDonEye",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#ManMade" ],
+  "http://hw.ac.uk/CW1/WattTours#lendmarkOf" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#London"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "London Eye"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#London",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#City" ],
+  "http://hw.ac.uk/CW1/WattTours#cityName" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "London"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#hasID" : [ {
+    "@value" : "http://www.wikidata.org/entity/Q84"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#isCapital" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#UK"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Louvre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#ManMade" ],
+  "http://hw.ac.uk/CW1/WattTours#lendmarkOf" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#AbuDhabi"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Louvre"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#ManMade",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@language" : "en",
+    "@value" : "maurizio colombo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "architectural and historical features of a city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ManmadeLandmark"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Landmark"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Natural"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Montepulciano",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#City" ],
+  "http://hw.ac.uk/CW1/WattTours#belongTo" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Italy"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#cityName" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Montepulciano"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#hasID" : [ {
+    "@value" : "http://www.wikidata.org/entity/Q91217"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Natural",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@language" : "en",
+    "@value" : "maurizio colombo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "natural features"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "NaturalLandmark"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Landmark"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Opt1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "maurizio colombo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "package that includes a maximum of 3 cites in 3 days"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BasicTour"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Tour"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid29"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Opt2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "maurizio colombo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "package that offers a maximum of 5 cities in 3 days"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ShortTour"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Tour"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid30"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Opt3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "maurizio colombo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "package that offers a maximum of 8 cities in 5 days"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "LongTour"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Tour"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid31"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Opt4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "maurizio colombo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PremiumTour"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Tour"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid32"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Palermo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#City" ],
+  "http://hw.ac.uk/CW1/WattTours#belongTo" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Italy"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#cityName" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Palermo"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#hasID" : [ {
+    "@value" : "http://www.wikidata.org/entity/Q2656"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Rome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#City" ],
+  "http://hw.ac.uk/CW1/WattTours#cityName" : [ {
+    "@value" : "Roma"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#hasID" : [ {
+    "@value" : "http://www.wikidata.org/entity/Q220"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#hasLandMark" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Coliseum"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#isCapital" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Italy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Rome"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#SantaCruz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#City" ],
+  "http://hw.ac.uk/CW1/WattTours#belongTo" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Bolivia"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#cityName" : [ {
+    "@value" : "Santa Cruz"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#hasID" : [ {
+    "@value" : "http://www.wikidata.org/entity/Q170688"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Santa Cruz"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#ShZayedMosque",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#ManMade" ],
+  "http://hw.ac.uk/CW1/WattTours#lendmarkOf" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#AbuDhabi"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Shaikh Zayed Mosque"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Sharjah",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#City" ],
+  "http://hw.ac.uk/CW1/WattTours#belongTo" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#UAE"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#cityName" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Sharjah"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#hasID" : [ {
+    "@value" : "http://www.wikidata.org/entity/Q289693"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#hasLandMark" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#HajarWadi"
+  }, {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#SharjahFort"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#SharjahFort",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#ManMade" ],
+  "http://hw.ac.uk/CW1/WattTours#lendmarkOf" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Sharjah"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Siena",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#City" ],
+  "http://hw.ac.uk/CW1/WattTours#belongTo" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Italy"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#cityName" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Siena"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#hasID" : [ {
+    "@value" : "http://www.wikidata.org/entity/Q2751"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#hasLandMark" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#WYards"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Tiwanaku",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#ManMade" ],
+  "http://hw.ac.uk/CW1/WattTours#hasLandMark" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Tiwanaku"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Tour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "maurizio colombo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tour"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Tour1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#Opt1" ],
+  "http://hw.ac.uk/CW1/WattTours#hasDuration" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#3Days"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#visits" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Montepulciano"
+  }, {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Rome"
+  }, {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Siena"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Tour2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#Opt3" ],
+  "http://hw.ac.uk/CW1/WattTours#hasDuration" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#1Week"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#visits" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Florence"
+  }, {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Genoa"
+  }, {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Rome"
+  }, {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Turin"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Tour3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#Opt2" ],
+  "http://hw.ac.uk/CW1/WattTours#hasDuration" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#5Days"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#visits" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#AbuDhabi"
+  }, {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Dubai"
+  }, {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Sharjah"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Tour3"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Tour4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#Opt1" ],
+  "http://hw.ac.uk/CW1/WattTours#hasDuration" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#3Days"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#visits" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#LaPaz"
+  }, {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#SantaCruz"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#TourLenght",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Duration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isDurationOf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Tour"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#hasDuration"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#Turin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#City" ],
+  "http://hw.ac.uk/CW1/WattTours#belongTo" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Italy"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#cityName" : [ {
+    "@value" : "Torino"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#hasID" : [ {
+    "@value" : "http://www.wikidata.org/entity/Q495"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Turin"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#UAE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#Country" ],
+  "http://hw.ac.uk/CW1/WattTours#countryName" : [ {
+    "@value" : "United Arab Emirates"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#hasCapital" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#AbuDhabi"
+  } ],
+  "http://hw.ac.uk/CW1/WattTours#hasCity" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Dubai"
+  }, {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Sharjah"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "United Arab Emirates"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#UK",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://hw.ac.uk/CW1/WattTours#hasCapital" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#London"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "United Kingdom"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#WYards",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://hw.ac.uk/CW1/WattTours#Natural" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "wineYards"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#belongTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "maurizio colombo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the city belongs to the specified country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "belongsTo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Country"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#hasCity"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#cityName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "cityName"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#countryName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "countryName"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#day",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#days",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Duration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "days duration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#hasCapital",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "maurizio colombo"
+  }, {
+    "@value" : "the capital of the country is the specified city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasCapitalCity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#hasCity"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#isCapital"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#hasCity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "maurizio colombo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the country includes the specified city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasCity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#City"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#hasDuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "maurizio colombo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "express the duration (days/weeks) of the Tour"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Tour"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasDuration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Duration"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#hasID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has ID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#hasLandMark",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "maurizio colombo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the city has the specified landmark"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasLandmark"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Landmark"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#lendmarkOf"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#isCapital",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "maurizio colombo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "is the capital city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isCapitalOf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#belongTo"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#lendmarkOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "maurizio colombo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the landmark belongs to the specified city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Landmark"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isLandmarkOf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#City"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#visited",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isVisited"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Tour"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#visits"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#visits",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "maurizio colombo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the tout includes the specified city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Tour"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isVisiting"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#City"
+  } ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#week",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://hw.ac.uk/CW1/WattTours#weeks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://hw.ac.uk/CW1/WattTours#Duration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "weeks duration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#unitDay",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#unitWeek",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+} ]

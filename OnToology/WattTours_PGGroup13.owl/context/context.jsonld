@@ -1,0 +1,118 @@
+{
+  "@context" : {
+    "hasLandMark" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#hasLandMark",
+      "@type" : "@id"
+    },
+    "isCapital" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#isCapital",
+      "@type" : "@id"
+    },
+    "lendmarkOf" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#lendmarkOf",
+      "@type" : "@id"
+    },
+    "ManMade" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#ManMade"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "Country" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Country"
+    },
+    "Attraction" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Attraction"
+    },
+    "visits" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#visits",
+      "@type" : "@id"
+    },
+    "Landmark" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Landmark"
+    },
+    "hasID" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#hasID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Opt1" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Opt1"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "countryName" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#countryName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Opt2" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Opt2"
+    },
+    "hasDuration" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#hasDuration",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "Duration" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Duration"
+    },
+    "days" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#days",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Tour" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Tour"
+    },
+    "hasCity" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#hasCity",
+      "@type" : "@id"
+    },
+    "Capital" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Capital"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "TourLenght" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#TourLenght",
+      "@type" : "@id"
+    },
+    "City" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#City"
+    },
+    "cityName" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#cityName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "weeks" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#weeks",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Opt4" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Opt4"
+    },
+    "hasCapital" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#hasCapital",
+      "@type" : "@id"
+    },
+    "belongTo" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#belongTo",
+      "@type" : "@id"
+    },
+    "Natural" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Natural"
+    },
+    "visited" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#visited",
+      "@type" : "@id"
+    },
+    "Opt3" : {
+      "@id" : "http://hw.ac.uk/CW1/WattTours#Opt3"
+    }
+  }
+}

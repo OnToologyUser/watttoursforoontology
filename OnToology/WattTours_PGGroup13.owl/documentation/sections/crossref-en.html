@@ -1,0 +1,2379 @@
+<h2 id="crossreference" class="list">Cross reference for WattTour Ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by WattTour Ontology.
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Opt1" title="http://hw.ac.uk/CW1/WattTours#Opt1">BasicTour</a>
+      </li>
+      <li>
+         <a href="#Capital" title="http://hw.ac.uk/CW1/WattTours#Capital">capitalCity</a>
+      </li>
+      <li>
+         <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+      </li>
+      <li>
+         <a href="#Country" title="http://hw.ac.uk/CW1/WattTours#Country">Country</a>
+      </li>
+      <li>
+         <a href="#Duration" title="http://hw.ac.uk/CW1/WattTours#Duration">DurationDescription</a>
+      </li>
+      <li>
+         <a href="#Landmark" title="http://hw.ac.uk/CW1/WattTours#Landmark">Landmark</a>
+      </li>
+      <li>
+         <a href="#Opt3" title="http://hw.ac.uk/CW1/WattTours#Opt3">LongTour</a>
+      </li>
+      <li>
+         <a href="#ManMade" title="http://hw.ac.uk/CW1/WattTours#ManMade">ManmadeLandmark</a>
+      </li>
+      <li>
+         <a href="#Natural" title="http://hw.ac.uk/CW1/WattTours#Natural">NaturalLandmark</a>
+      </li>
+      <li>
+         <a href="#Opt4" title="http://hw.ac.uk/CW1/WattTours#Opt4">PremiumTour</a>
+      </li>
+      <li>
+         <a href="#Opt2" title="http://hw.ac.uk/CW1/WattTours#Opt2">ShortTour</a>
+      </li>
+      <li>
+         <a href="#Tour" title="http://hw.ac.uk/CW1/WattTours#Tour">Tour</a>
+      </li>
+      <li>
+         <a href="#Attraction" title="http://hw.ac.uk/CW1/WattTours#Attraction">touristicAttraction</a>
+      </li>
+   </ul>
+   <div class="entity" id="Opt1">
+      <h3>BasicTour<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Opt1</p>
+      <div class="comment">
+         <span class="markdown">package that includes a maximum of 3 cites in 3 days</span>
+      </div>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>maurizio colombo</dd>
+      </dl>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#hasDuration" title="http://hw.ac.uk/CW1/WattTours#hasDuration">hasDuration</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">value</span> 
+            <a href="#3Days" title="http://hw.ac.uk/CW1/WattTours#3Days">3 days</a>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Tour" title="http://hw.ac.uk/CW1/WattTours#Tour">Tour</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#Tour1" title="http://hw.ac.uk/CW1/WattTours#Tour1">tour1</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Tour4" title="http://hw.ac.uk/CW1/WattTours#Tour4">tour4</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Capital">
+      <h3>capitalCity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Capital</p>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>maurizio colombo</dd>
+      </dl>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> ((<a href="#isCapital" title="http://hw.ac.uk/CW1/WattTours#isCapital">isCapitalOf</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#Country" title="http://hw.ac.uk/CW1/WattTours#Country">Country</a>
+            <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<a href="#isCapital" title="http://hw.ac.uk/CW1/WattTours#isCapital">isCapitalOf</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <a href="#Country" title="http://hw.ac.uk/CW1/WattTours#Country">Country</a>
+            <sup class="type-c" title="class">c</sup>))</dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="City">
+      <h3>City<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#City</p>
+      <div class="comment">
+         <span class="markdown">possible cities to be included in the tour</span>
+      </div>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>maurizio colombo</dd>
+      </dl>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Capital" title="http://hw.ac.uk/CW1/WattTours#Capital">capitalCity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#belongTo" title="http://hw.ac.uk/CW1/WattTours#belongTo">belongsTo</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#cityName" title="http://hw.ac.uk/CW1/WattTours#cityName">cityName</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasID" title="http://hw.ac.uk/CW1/WattTours#hasID">has ID</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasLandMark" title="http://hw.ac.uk/CW1/WattTours#hasLandMark">hasLandmark</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isCapital" title="http://hw.ac.uk/CW1/WattTours#isCapital">isCapitalOf</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#visited" title="http://hw.ac.uk/CW1/WattTours#visited">isVisited</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasCapital" title="http://hw.ac.uk/CW1/WattTours#hasCapital">hasCapitalCity</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasCity" title="http://hw.ac.uk/CW1/WattTours#hasCity">hasCity</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#lendmarkOf" title="http://hw.ac.uk/CW1/WattTours#lendmarkOf">isLandmarkOf</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#visits" title="http://hw.ac.uk/CW1/WattTours#visits">isVisiting</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#AbuDhabi" title="http://hw.ac.uk/CW1/WattTours#AbuDhabi">Abu Dhabi</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Cortina" title="http://hw.ac.uk/CW1/WattTours#Cortina">Cortina D'Ampezzo</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Dubai" title="http://hw.ac.uk/CW1/WattTours#Dubai">Dubai</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Florence" title="http://hw.ac.uk/CW1/WattTours#Florence">Florence</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Genoa" title="http://hw.ac.uk/CW1/WattTours#Genoa">Genova</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#LaPaz" title="http://hw.ac.uk/CW1/WattTours#LaPaz">La Paz</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Rome" title="http://hw.ac.uk/CW1/WattTours#Rome">Rome</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#SantaCruz" title="http://hw.ac.uk/CW1/WattTours#SantaCruz">Santa Cruz</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Turin" title="http://hw.ac.uk/CW1/WattTours#Turin">Turin</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#London" title="http://hw.ac.uk/CW1/WattTours#London">london</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Montepulciano" title="http://hw.ac.uk/CW1/WattTours#Montepulciano">montepulciano</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Palermo" title="http://hw.ac.uk/CW1/WattTours#Palermo">palermo</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Sharjah" title="http://hw.ac.uk/CW1/WattTours#Sharjah">sharjah</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Siena" title="http://hw.ac.uk/CW1/WattTours#Siena">siena</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Country">
+      <h3>Country<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Country</p>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>maurizio colombo</dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#countryName" title="http://hw.ac.uk/CW1/WattTours#countryName">countryName</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCapital" title="http://hw.ac.uk/CW1/WattTours#hasCapital">hasCapitalCity</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasCity" title="http://hw.ac.uk/CW1/WattTours#hasCity">hasCity</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#belongTo" title="http://hw.ac.uk/CW1/WattTours#belongTo">belongsTo</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isCapital" title="http://hw.ac.uk/CW1/WattTours#isCapital">isCapitalOf</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#Bolivia" title="http://hw.ac.uk/CW1/WattTours#Bolivia">Bolivia</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Italy" title="http://hw.ac.uk/CW1/WattTours#Italy">Italy</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#UAE" title="http://hw.ac.uk/CW1/WattTours#UAE">United Arab Emirates</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Duration">
+      <h3>DurationDescription<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Duration</p>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>maurizio colombo</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#days" title="http://hw.ac.uk/CW1/WattTours#days">days duration</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#TourLenght" title="http://hw.ac.uk/CW1/WattTours#TourLenght">isDurationOf</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#weeks" title="http://hw.ac.uk/CW1/WattTours#weeks">weeks duration</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasDuration" title="http://hw.ac.uk/CW1/WattTours#hasDuration">hasDuration</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#3Days" title="http://hw.ac.uk/CW1/WattTours#3Days">3 days</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Landmark">
+      <h3>Landmark<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Landmark</p>
+      <div class="comment">
+         <span class="markdown">it describes city's landamark worth visiting</span>
+      </div>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>maurizio colombo</dd>
+      </dl>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#ManMade" title="http://hw.ac.uk/CW1/WattTours#ManMade">ManmadeLandmark</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">or</span> 
+            <a href="#Natural" title="http://hw.ac.uk/CW1/WattTours#Natural">NaturalLandmark</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#ManMade" title="http://hw.ac.uk/CW1/WattTours#ManMade">ManmadeLandmark</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Natural" title="http://hw.ac.uk/CW1/WattTours#Natural">NaturalLandmark</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#lendmarkOf" title="http://hw.ac.uk/CW1/WattTours#lendmarkOf">isLandmarkOf</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasLandMark" title="http://hw.ac.uk/CW1/WattTours#hasLandMark">hasLandmark</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Opt3">
+      <h3>LongTour<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Opt3</p>
+      <div class="comment">
+         <span class="markdown">package that offers a maximum of 8 cities in 5 days</span>
+      </div>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>maurizio colombo</dd>
+      </dl>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#hasDuration" title="http://hw.ac.uk/CW1/WattTours#hasDuration">hasDuration</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">value</span> 
+            <a href="#1Week" title="http://hw.ac.uk/CW1/WattTours#1Week">1 week</a>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Tour" title="http://hw.ac.uk/CW1/WattTours#Tour">Tour</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#Tour2" title="http://hw.ac.uk/CW1/WattTours#Tour2">tour2</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ManMade">
+      <h3>ManmadeLandmark<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#ManMade</p>
+      <div class="comment">
+         <span class="markdown">architectural and historical features of a city</span>
+      </div>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>maurizio colombo</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Landmark" title="http://hw.ac.uk/CW1/WattTours#Landmark">Landmark</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#AlFahidiQtr" title="http://hw.ac.uk/CW1/WattTours#AlFahidiQtr">Al Fahidi Quarter</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#BuckPalace" title="http://hw.ac.uk/CW1/WattTours#BuckPalace">Buckingam Palace</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#BurjAlArab" title="http://hw.ac.uk/CW1/WattTours#BurjAlArab">Burj AlArab</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#BurjKhalifa" title="http://hw.ac.uk/CW1/WattTours#BurjKhalifa">Burj Khalifa</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Coliseum" title="http://hw.ac.uk/CW1/WattTours#Coliseum">Colosseum</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#DubaiMuseum" title="http://hw.ac.uk/CW1/WattTours#DubaiMuseum">Dubai Museum</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#FerrariWorld" title="http://hw.ac.uk/CW1/WattTours#FerrariWorld">Ferrari World</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#LonDonEye" title="http://hw.ac.uk/CW1/WattTours#LonDonEye">London Eye</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Louvre" title="http://hw.ac.uk/CW1/WattTours#Louvre">Louvre</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ShZayedMosque" title="http://hw.ac.uk/CW1/WattTours#ShZayedMosque">Shaikh Zayed Mosque</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#SharjahFort" title="http://hw.ac.uk/CW1/WattTours#SharjahFort">sharjah fort</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Tiwanaku" title="http://hw.ac.uk/CW1/WattTours#Tiwanaku">tiwanaku</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Natural" title="http://hw.ac.uk/CW1/WattTours#Natural">NaturalLandmark</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Natural">
+      <h3>NaturalLandmark<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Natural</p>
+      <div class="comment">
+         <span class="markdown">natural features</span>
+      </div>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>maurizio colombo</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Landmark" title="http://hw.ac.uk/CW1/WattTours#Landmark">Landmark</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#HajarWadi" title="http://hw.ac.uk/CW1/WattTours#HajarWadi">Hajar Wadi</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#WYards" title="http://hw.ac.uk/CW1/WattTours#WYards">wineYards</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#ManMade" title="http://hw.ac.uk/CW1/WattTours#ManMade">ManmadeLandmark</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Opt4">
+      <h3>PremiumTour<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Opt4</p>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>maurizio colombo</dd>
+      </dl>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#hasDuration" title="http://hw.ac.uk/CW1/WattTours#hasDuration">hasDuration</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">value</span> 
+            <a href="#2Weeks" title="http://hw.ac.uk/CW1/WattTours#2Weeks">2 weeks</a>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Tour" title="http://hw.ac.uk/CW1/WattTours#Tour">Tour</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Opt2">
+      <h3>ShortTour<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Opt2</p>
+      <div class="comment">
+         <span class="markdown">package that offers a maximum of 5 cities in 3 days</span>
+      </div>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>maurizio colombo</dd>
+      </dl>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#hasDuration" title="http://hw.ac.uk/CW1/WattTours#hasDuration">hasDuration</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">value</span> 
+            <a href="#5Days" title="http://hw.ac.uk/CW1/WattTours#5Days">5 days</a>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Tour" title="http://hw.ac.uk/CW1/WattTours#Tour">Tour</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#Tour3" title="http://hw.ac.uk/CW1/WattTours#Tour3">Tour3</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Tour">
+      <h3>Tour<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Tour</p>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>maurizio colombo</dd>
+      </dl>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Opt1" title="http://hw.ac.uk/CW1/WattTours#Opt1">BasicTour</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Opt3" title="http://hw.ac.uk/CW1/WattTours#Opt3">LongTour</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Opt4" title="http://hw.ac.uk/CW1/WattTours#Opt4">PremiumTour</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Opt2" title="http://hw.ac.uk/CW1/WattTours#Opt2">ShortTour</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasDuration" title="http://hw.ac.uk/CW1/WattTours#hasDuration">hasDuration</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#visits" title="http://hw.ac.uk/CW1/WattTours#visits">isVisiting</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#TourLenght" title="http://hw.ac.uk/CW1/WattTours#TourLenght">isDurationOf</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#visited" title="http://hw.ac.uk/CW1/WattTours#visited">isVisited</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Attraction">
+      <h3>touristicAttraction<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Attraction</p>
+      <div class="comment">
+         <span class="markdown">a city that have some touritistic interest, could be historical site or other</span>
+      </div>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>maurizio colombo</dd>
+      </dl>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> (<a href="#hasLandMark" title="http://hw.ac.uk/CW1/WattTours#hasLandMark">hasLandmark</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#Landmark" title="http://hw.ac.uk/CW1/WattTours#Landmark">Landmark</a>
+            <sup class="type-c" title="class">c</sup>)</dd>
+      </dl>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#belongTo" title="http://hw.ac.uk/CW1/WattTours#belongTo">belongsTo</a>
+      </li>
+      <li>
+         <a href="#hasCapital" title="http://hw.ac.uk/CW1/WattTours#hasCapital">hasCapitalCity</a>
+      </li>
+      <li>
+         <a href="#hasCity" title="http://hw.ac.uk/CW1/WattTours#hasCity">hasCity</a>
+      </li>
+      <li>
+         <a href="#hasDuration" title="http://hw.ac.uk/CW1/WattTours#hasDuration">hasDuration</a>
+      </li>
+      <li>
+         <a href="#hasLandMark" title="http://hw.ac.uk/CW1/WattTours#hasLandMark">hasLandmark</a>
+      </li>
+      <li>
+         <a href="#isCapital" title="http://hw.ac.uk/CW1/WattTours#isCapital">isCapitalOf</a>
+      </li>
+      <li>
+         <a href="#TourLenght" title="http://hw.ac.uk/CW1/WattTours#TourLenght">isDurationOf</a>
+      </li>
+      <li>
+         <a href="#lendmarkOf" title="http://hw.ac.uk/CW1/WattTours#lendmarkOf">isLandmarkOf</a>
+      </li>
+      <li>
+         <a href="#visited" title="http://hw.ac.uk/CW1/WattTours#visited">isVisited</a>
+      </li>
+      <li>
+         <a href="#visits" title="http://hw.ac.uk/CW1/WattTours#visits">isVisiting</a>
+      </li>
+   </ul>
+   <div class="entity" id="belongTo">
+      <h3>belongsTo<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#belongTo</p>
+      <div class="comment">
+         <span class="markdown">the city belongs to the specified country</span>
+      </div>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>maurizio colombo</dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#isCapital" title="http://hw.ac.uk/CW1/WattTours#isCapital">isCapitalOf</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Country" title="http://hw.ac.uk/CW1/WattTours#Country">Country</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasCity" title="http://hw.ac.uk/CW1/WattTours#hasCity">hasCity</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasCapital">
+      <h3>hasCapitalCity<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#hasCapital</p>
+      <div class="comment">
+         <span class="markdown">maurizio colombo</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional, inverse functional</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasCity" title="http://hw.ac.uk/CW1/WattTours#hasCity">hasCity</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Country" title="http://hw.ac.uk/CW1/WattTours#Country">Country</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isCapital" title="http://hw.ac.uk/CW1/WattTours#isCapital">isCapitalOf</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasCity">
+      <h3>hasCity<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#hasCity</p>
+      <div class="comment">
+         <span class="markdown">the country includes the specified city</span>
+      </div>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>maurizio colombo</dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> inverse functional</p>
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#hasCapital" title="http://hw.ac.uk/CW1/WattTours#hasCapital">hasCapitalCity</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Country" title="http://hw.ac.uk/CW1/WattTours#Country">Country</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#belongTo" title="http://hw.ac.uk/CW1/WattTours#belongTo">belongsTo</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDuration">
+      <h3>hasDuration<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#hasDuration</p>
+      <div class="comment">
+         <span class="markdown">express the duration (days/weeks) of the Tour</span>
+      </div>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>maurizio colombo</dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Tour" title="http://hw.ac.uk/CW1/WattTours#Tour">Tour</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Duration" title="http://hw.ac.uk/CW1/WattTours#Duration">DurationDescription</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#TourLenght" title="http://hw.ac.uk/CW1/WattTours#TourLenght">isDurationOf</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasLandMark">
+      <h3>hasLandmark<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#hasLandMark</p>
+      <div class="comment">
+         <span class="markdown">the city has the specified landmark</span>
+      </div>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>maurizio colombo</dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> inverse functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Landmark" title="http://hw.ac.uk/CW1/WattTours#Landmark">Landmark</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#lendmarkOf" title="http://hw.ac.uk/CW1/WattTours#lendmarkOf">isLandmarkOf</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isCapital">
+      <h3>isCapitalOf<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#isCapital</p>
+      <div class="comment">
+         <span class="markdown">is the capital city</span>
+      </div>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>maurizio colombo</dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional, inverse functional</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#belongTo" title="http://hw.ac.uk/CW1/WattTours#belongTo">belongsTo</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Country" title="http://hw.ac.uk/CW1/WattTours#Country">Country</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasCapital" title="http://hw.ac.uk/CW1/WattTours#hasCapital">hasCapitalCity</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="TourLenght">
+      <h3>isDurationOf<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#TourLenght</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> inverse functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Duration" title="http://hw.ac.uk/CW1/WattTours#Duration">DurationDescription</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Tour" title="http://hw.ac.uk/CW1/WattTours#Tour">Tour</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasDuration" title="http://hw.ac.uk/CW1/WattTours#hasDuration">hasDuration</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="lendmarkOf">
+      <h3>isLandmarkOf<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#lendmarkOf</p>
+      <div class="comment">
+         <span class="markdown">the landmark belongs to the specified city</span>
+      </div>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>maurizio colombo</dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Landmark" title="http://hw.ac.uk/CW1/WattTours#Landmark">Landmark</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasLandMark" title="http://hw.ac.uk/CW1/WattTours#hasLandMark">hasLandmark</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="visited">
+      <h3>isVisited<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#visited</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Tour" title="http://hw.ac.uk/CW1/WattTours#Tour">Tour</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#visits" title="http://hw.ac.uk/CW1/WattTours#visits">isVisiting</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="visits">
+      <h3>isVisiting<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#visits</p>
+      <div class="comment">
+         <span class="markdown">the tout includes the specified city</span>
+      </div>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>maurizio colombo</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Tour" title="http://hw.ac.uk/CW1/WattTours#Tour">Tour</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#visited" title="http://hw.ac.uk/CW1/WattTours#visited">isVisited</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#cityName" title="http://hw.ac.uk/CW1/WattTours#cityName">cityName</a>
+      </li>
+      <li>
+         <a href="#countryName" title="http://hw.ac.uk/CW1/WattTours#countryName">countryName</a>
+      </li>
+      <li>
+         <a href="#days" title="http://hw.ac.uk/CW1/WattTours#days">days duration</a>
+      </li>
+      <li>
+         <a href="#hasID" title="http://hw.ac.uk/CW1/WattTours#hasID">has ID</a>
+      </li>
+      <li>
+         <a href="#weeks" title="http://hw.ac.uk/CW1/WattTours#weeks">weeks duration</a>
+      </li>
+   </ul>
+   <div class="entity" id="cityName">
+      <h3>cityName<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#cityName</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="countryName">
+      <h3>countryName<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#countryName</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Country" title="http://hw.ac.uk/CW1/WattTours#Country">Country</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="days">
+      <h3>days duration<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#days</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Duration" title="http://hw.ac.uk/CW1/WattTours#Duration">DurationDescription</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasID">
+      <h3>has ID<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#hasID</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="weeks">
+      <h3>weeks duration<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#weeks</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Duration" title="http://hw.ac.uk/CW1/WattTours#Duration">DurationDescription</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#1Week" title="http://hw.ac.uk/CW1/WattTours#1Week">
+            <span>1 week</span>
+         </a>
+      </li>
+      <li>
+         <a href="#2Weeks" title="http://hw.ac.uk/CW1/WattTours#2Weeks">
+            <span>2 weeks</span>
+         </a>
+      </li>
+      <li>
+         <a href="#3Days" title="http://hw.ac.uk/CW1/WattTours#3Days">
+            <span>3 days</span>
+         </a>
+      </li>
+      <li>
+         <a href="#5Days" title="http://hw.ac.uk/CW1/WattTours#5Days">
+            <span>5 days</span>
+         </a>
+      </li>
+      <li>
+         <a href="#AbuDhabi" title="http://hw.ac.uk/CW1/WattTours#AbuDhabi">Abu Dhabi</a>
+      </li>
+      <li>
+         <a href="#AlFahidiQtr" title="http://hw.ac.uk/CW1/WattTours#AlFahidiQtr">Al Fahidi Quarter</a>
+      </li>
+      <li>
+         <a href="#Bolivia" title="http://hw.ac.uk/CW1/WattTours#Bolivia">Bolivia</a>
+      </li>
+      <li>
+         <a href="#BuckPalace" title="http://hw.ac.uk/CW1/WattTours#BuckPalace">Buckingam Palace</a>
+      </li>
+      <li>
+         <a href="#BurjAlArab" title="http://hw.ac.uk/CW1/WattTours#BurjAlArab">Burj AlArab</a>
+      </li>
+      <li>
+         <a href="#BurjKhalifa" title="http://hw.ac.uk/CW1/WattTours#BurjKhalifa">Burj Khalifa</a>
+      </li>
+      <li>
+         <a href="#Coliseum" title="http://hw.ac.uk/CW1/WattTours#Coliseum">Colosseum</a>
+      </li>
+      <li>
+         <a href="#Cortina" title="http://hw.ac.uk/CW1/WattTours#Cortina">Cortina D'Ampezzo</a>
+      </li>
+      <li>
+         <a href="#Dubai" title="http://hw.ac.uk/CW1/WattTours#Dubai">Dubai</a>
+      </li>
+      <li>
+         <a href="#DubaiMuseum" title="http://hw.ac.uk/CW1/WattTours#DubaiMuseum">Dubai Museum</a>
+      </li>
+      <li>
+         <a href="#FerrariWorld" title="http://hw.ac.uk/CW1/WattTours#FerrariWorld">Ferrari World</a>
+      </li>
+      <li>
+         <a href="#Florence" title="http://hw.ac.uk/CW1/WattTours#Florence">Florence</a>
+      </li>
+      <li>
+         <a href="#Genoa" title="http://hw.ac.uk/CW1/WattTours#Genoa">Genova</a>
+      </li>
+      <li>
+         <a href="#HajarWadi" title="http://hw.ac.uk/CW1/WattTours#HajarWadi">Hajar Wadi</a>
+      </li>
+      <li>
+         <a href="#Italy" title="http://hw.ac.uk/CW1/WattTours#Italy">Italy</a>
+      </li>
+      <li>
+         <a href="#LaPaz" title="http://hw.ac.uk/CW1/WattTours#LaPaz">La Paz</a>
+      </li>
+      <li>
+         <a href="#London" title="http://hw.ac.uk/CW1/WattTours#London">
+            <span>london</span>
+         </a>
+      </li>
+      <li>
+         <a href="#LonDonEye" title="http://hw.ac.uk/CW1/WattTours#LonDonEye">London Eye</a>
+      </li>
+      <li>
+         <a href="#Louvre" title="http://hw.ac.uk/CW1/WattTours#Louvre">Louvre</a>
+      </li>
+      <li>
+         <a href="#Montepulciano" title="http://hw.ac.uk/CW1/WattTours#Montepulciano">
+            <span>montepulciano</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Palermo" title="http://hw.ac.uk/CW1/WattTours#Palermo">
+            <span>palermo</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Rome" title="http://hw.ac.uk/CW1/WattTours#Rome">Rome</a>
+      </li>
+      <li>
+         <a href="#SantaCruz" title="http://hw.ac.uk/CW1/WattTours#SantaCruz">Santa Cruz</a>
+      </li>
+      <li>
+         <a href="#ShZayedMosque" title="http://hw.ac.uk/CW1/WattTours#ShZayedMosque">Shaikh Zayed Mosque</a>
+      </li>
+      <li>
+         <a href="#Sharjah" title="http://hw.ac.uk/CW1/WattTours#Sharjah">
+            <span>sharjah</span>
+         </a>
+      </li>
+      <li>
+         <a href="#SharjahFort" title="http://hw.ac.uk/CW1/WattTours#SharjahFort">
+            <span>sharjah fort</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Siena" title="http://hw.ac.uk/CW1/WattTours#Siena">
+            <span>siena</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Tiwanaku" title="http://hw.ac.uk/CW1/WattTours#Tiwanaku">
+            <span>tiwanaku</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Tour1" title="http://hw.ac.uk/CW1/WattTours#Tour1">
+            <span>tour1</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Tour2" title="http://hw.ac.uk/CW1/WattTours#Tour2">
+            <span>tour2</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Tour3" title="http://hw.ac.uk/CW1/WattTours#Tour3">Tour3</a>
+      </li>
+      <li>
+         <a href="#Tour4" title="http://hw.ac.uk/CW1/WattTours#Tour4">
+            <span>tour4</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Turin" title="http://hw.ac.uk/CW1/WattTours#Turin">Turin</a>
+      </li>
+      <li>
+         <a href="#UAE" title="http://hw.ac.uk/CW1/WattTours#UAE">United Arab Emirates</a>
+      </li>
+      <li>
+         <a href="#UK" title="http://hw.ac.uk/CW1/WattTours#UK">United Kingdom</a>
+      </li>
+      <li>
+         <a href="#WYards" title="http://hw.ac.uk/CW1/WattTours#WYards">wineYards</a>
+      </li>
+   </ul>
+   <div class="entity" id="1Week">
+      <h3>1 week<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#1Week</p>
+      <dl class="description">
+         <dt>has facts</dt>
+         <dd>
+            <a href="#weeks" title="http://hw.ac.uk/CW1/WattTours#weeks">weeks duration</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"1"^^<a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="2Weeks">
+      <h3>2 weeks<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#2Weeks</p>
+      <dl class="description">
+         <dt>has facts</dt>
+         <dd>
+            <a href="#weeks" title="http://hw.ac.uk/CW1/WattTours#weeks">weeks duration</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2"^^<a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="3Days">
+      <h3>3 days<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#3Days</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Duration" title="http://hw.ac.uk/CW1/WattTours#Duration">DurationDescription</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#days" title="http://hw.ac.uk/CW1/WattTours#days">days duration</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"3"^^<a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="5Days">
+      <h3>5 days<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#5Days</p>
+      <dl class="description">
+         <dt>has facts</dt>
+         <dd>
+            <a href="#days" title="http://hw.ac.uk/CW1/WattTours#days">days duration</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"5"^^<a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="AbuDhabi">
+      <h3>Abu Dhabi<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#AbuDhabi</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasLandMark" title="http://hw.ac.uk/CW1/WattTours#hasLandMark">hasLandmark</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#FerrariWorld" title="http://hw.ac.uk/CW1/WattTours#FerrariWorld">Ferrari World</a>
+         </dd>
+         <dd>
+            <a href="#hasLandMark" title="http://hw.ac.uk/CW1/WattTours#hasLandMark">hasLandmark</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Louvre" title="http://hw.ac.uk/CW1/WattTours#Louvre">Louvre</a>
+         </dd>
+         <dd>
+            <a href="#hasLandMark" title="http://hw.ac.uk/CW1/WattTours#hasLandMark">hasLandmark</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#ShZayedMosque" title="http://hw.ac.uk/CW1/WattTours#ShZayedMosque">Shaikh Zayed Mosque</a>
+         </dd>
+         <dd>
+            <a href="#isCapital" title="http://hw.ac.uk/CW1/WattTours#isCapital">isCapitalOf</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#UAE" title="http://hw.ac.uk/CW1/WattTours#UAE">United Arab Emirates</a>
+         </dd>
+         <dd>
+            <a href="#cityName" title="http://hw.ac.uk/CW1/WattTours#cityName">cityName</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"Abu Dhabi"^^<a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#hasID" title="http://hw.ac.uk/CW1/WattTours#hasID">has ID</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"http://www.wikidata.org/entity/Q1519"</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="AlFahidiQtr">
+      <h3>Al Fahidi Quarter<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#AlFahidiQtr</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#ManMade" title="http://hw.ac.uk/CW1/WattTours#ManMade">ManmadeLandmark</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#lendmarkOf" title="http://hw.ac.uk/CW1/WattTours#lendmarkOf">isLandmarkOf</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Dubai" title="http://hw.ac.uk/CW1/WattTours#Dubai">Dubai</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Bolivia">
+      <h3>Bolivia<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Bolivia</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Country" title="http://hw.ac.uk/CW1/WattTours#Country">Country</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasCapital" title="http://hw.ac.uk/CW1/WattTours#hasCapital">hasCapitalCity</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#LaPaz" title="http://hw.ac.uk/CW1/WattTours#LaPaz">La Paz</a>
+         </dd>
+         <dd>
+            <a href="#hasCity" title="http://hw.ac.uk/CW1/WattTours#hasCity">hasCity</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#SantaCruz" title="http://hw.ac.uk/CW1/WattTours#SantaCruz">Santa Cruz</a>
+         </dd>
+         <dd>
+            <a href="#countryName" title="http://hw.ac.uk/CW1/WattTours#countryName">countryName</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"Bolivia"</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="BuckPalace">
+      <h3>Buckingam Palace<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#BuckPalace</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#ManMade" title="http://hw.ac.uk/CW1/WattTours#ManMade">ManmadeLandmark</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#lendmarkOf" title="http://hw.ac.uk/CW1/WattTours#lendmarkOf">isLandmarkOf</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#London" title="http://hw.ac.uk/CW1/WattTours#London">london</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="BurjAlArab">
+      <h3>Burj AlArab<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#BurjAlArab</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#ManMade" title="http://hw.ac.uk/CW1/WattTours#ManMade">ManmadeLandmark</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#lendmarkOf" title="http://hw.ac.uk/CW1/WattTours#lendmarkOf">isLandmarkOf</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Dubai" title="http://hw.ac.uk/CW1/WattTours#Dubai">Dubai</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="BurjKhalifa">
+      <h3>Burj Khalifa<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#BurjKhalifa</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#ManMade" title="http://hw.ac.uk/CW1/WattTours#ManMade">ManmadeLandmark</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#lendmarkOf" title="http://hw.ac.uk/CW1/WattTours#lendmarkOf">isLandmarkOf</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Dubai" title="http://hw.ac.uk/CW1/WattTours#Dubai">Dubai</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Coliseum">
+      <h3>Colosseum<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Coliseum</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#ManMade" title="http://hw.ac.uk/CW1/WattTours#ManMade">ManmadeLandmark</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#lendmarkOf" title="http://hw.ac.uk/CW1/WattTours#lendmarkOf">isLandmarkOf</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Rome" title="http://hw.ac.uk/CW1/WattTours#Rome">Rome</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Cortina">
+      <h3>Cortina D'Ampezzo<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Cortina</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#belongTo" title="http://hw.ac.uk/CW1/WattTours#belongTo">belongsTo</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Italy" title="http://hw.ac.uk/CW1/WattTours#Italy">Italy</a>
+         </dd>
+         <dd>
+            <a href="#cityName" title="http://hw.ac.uk/CW1/WattTours#cityName">cityName</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"Cortina D'Ampezzo"^^<a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#hasID" title="http://hw.ac.uk/CW1/WattTours#hasID">has ID</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"http://www.wikidata.org/entity/Q41158"</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Dubai">
+      <h3>Dubai<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Dubai</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#belongTo" title="http://hw.ac.uk/CW1/WattTours#belongTo">belongsTo</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#UAE" title="http://hw.ac.uk/CW1/WattTours#UAE">United Arab Emirates</a>
+         </dd>
+         <dd>
+            <a href="#hasLandMark" title="http://hw.ac.uk/CW1/WattTours#hasLandMark">hasLandmark</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#AlFahidiQtr" title="http://hw.ac.uk/CW1/WattTours#AlFahidiQtr">Al Fahidi Quarter</a>
+         </dd>
+         <dd>
+            <a href="#hasLandMark" title="http://hw.ac.uk/CW1/WattTours#hasLandMark">hasLandmark</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#BurjAlArab" title="http://hw.ac.uk/CW1/WattTours#BurjAlArab">Burj AlArab</a>
+         </dd>
+         <dd>
+            <a href="#hasLandMark" title="http://hw.ac.uk/CW1/WattTours#hasLandMark">hasLandmark</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#BurjKhalifa" title="http://hw.ac.uk/CW1/WattTours#BurjKhalifa">Burj Khalifa</a>
+         </dd>
+         <dd>
+            <a href="#hasLandMark" title="http://hw.ac.uk/CW1/WattTours#hasLandMark">hasLandmark</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#DubaiMuseum" title="http://hw.ac.uk/CW1/WattTours#DubaiMuseum">Dubai Museum</a>
+         </dd>
+         <dd>
+            <a href="#cityName" title="http://hw.ac.uk/CW1/WattTours#cityName">cityName</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"Dubai"^^<a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#hasID" title="http://hw.ac.uk/CW1/WattTours#hasID">has ID</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"http://www.wikidata.org/entity/Q612"</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DubaiMuseum">
+      <h3>Dubai Museum<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#DubaiMuseum</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#ManMade" title="http://hw.ac.uk/CW1/WattTours#ManMade">ManmadeLandmark</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#lendmarkOf" title="http://hw.ac.uk/CW1/WattTours#lendmarkOf">isLandmarkOf</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Dubai" title="http://hw.ac.uk/CW1/WattTours#Dubai">Dubai</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FerrariWorld">
+      <h3>Ferrari World<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#FerrariWorld</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#ManMade" title="http://hw.ac.uk/CW1/WattTours#ManMade">ManmadeLandmark</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#lendmarkOf" title="http://hw.ac.uk/CW1/WattTours#lendmarkOf">isLandmarkOf</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#AbuDhabi" title="http://hw.ac.uk/CW1/WattTours#AbuDhabi">Abu Dhabi</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Florence">
+      <h3>Florence<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Florence</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#belongTo" title="http://hw.ac.uk/CW1/WattTours#belongTo">belongsTo</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Italy" title="http://hw.ac.uk/CW1/WattTours#Italy">Italy</a>
+         </dd>
+         <dd>
+            <a href="#cityName" title="http://hw.ac.uk/CW1/WattTours#cityName">cityName</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"Firenze"</span>
+         </dd>
+         <dd>
+            <a href="#hasID" title="http://hw.ac.uk/CW1/WattTours#hasID">has ID</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"http://www.wikidata.org/entity/Q2044"</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Genoa">
+      <h3>Genova<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Genoa</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#belongTo" title="http://hw.ac.uk/CW1/WattTours#belongTo">belongsTo</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Italy" title="http://hw.ac.uk/CW1/WattTours#Italy">Italy</a>
+         </dd>
+         <dd>
+            <a href="#cityName" title="http://hw.ac.uk/CW1/WattTours#cityName">cityName</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"Genova"^^<a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#hasID" title="http://hw.ac.uk/CW1/WattTours#hasID">has ID</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"http://www.wikidata.org/entity/Q1449"</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="HajarWadi">
+      <h3>Hajar Wadi<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#HajarWadi</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Natural" title="http://hw.ac.uk/CW1/WattTours#Natural">NaturalLandmark</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#lendmarkOf" title="http://hw.ac.uk/CW1/WattTours#lendmarkOf">isLandmarkOf</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Sharjah" title="http://hw.ac.uk/CW1/WattTours#Sharjah">sharjah</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Italy">
+      <h3>Italy<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Italy</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Country" title="http://hw.ac.uk/CW1/WattTours#Country">Country</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasCapital" title="http://hw.ac.uk/CW1/WattTours#hasCapital">hasCapitalCity</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Rome" title="http://hw.ac.uk/CW1/WattTours#Rome">Rome</a>
+         </dd>
+         <dd>
+            <a href="#hasCity" title="http://hw.ac.uk/CW1/WattTours#hasCity">hasCity</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Florence" title="http://hw.ac.uk/CW1/WattTours#Florence">Florence</a>
+         </dd>
+         <dd>
+            <a href="#hasCity" title="http://hw.ac.uk/CW1/WattTours#hasCity">hasCity</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Turin" title="http://hw.ac.uk/CW1/WattTours#Turin">Turin</a>
+         </dd>
+         <dd>
+            <a href="#countryName" title="http://hw.ac.uk/CW1/WattTours#countryName">countryName</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"Italia"</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LaPaz">
+      <h3>La Paz<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#LaPaz</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#belongTo" title="http://hw.ac.uk/CW1/WattTours#belongTo">belongsTo</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Bolivia" title="http://hw.ac.uk/CW1/WattTours#Bolivia">Bolivia</a>
+         </dd>
+         <dd>
+            <a href="#hasLandMark" title="http://hw.ac.uk/CW1/WattTours#hasLandMark">hasLandmark</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Tiwanaku" title="http://hw.ac.uk/CW1/WattTours#Tiwanaku">tiwanaku</a>
+         </dd>
+         <dd>
+            <a href="#cityName" title="http://hw.ac.uk/CW1/WattTours#cityName">cityName</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"La Paz"^^<a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#hasID" title="http://hw.ac.uk/CW1/WattTours#hasID">has ID</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"http://www.wikidata.org/entity/Q1491"</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="London">
+      <h3>london<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#London</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#isCapital" title="http://hw.ac.uk/CW1/WattTours#isCapital">isCapitalOf</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#UK" title="http://hw.ac.uk/CW1/WattTours#UK">United Kingdom</a>
+         </dd>
+         <dd>
+            <a href="#cityName" title="http://hw.ac.uk/CW1/WattTours#cityName">cityName</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"London"^^<a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#hasID" title="http://hw.ac.uk/CW1/WattTours#hasID">has ID</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"http://www.wikidata.org/entity/Q84"</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LonDonEye">
+      <h3>London Eye<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#LonDonEye</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#ManMade" title="http://hw.ac.uk/CW1/WattTours#ManMade">ManmadeLandmark</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#lendmarkOf" title="http://hw.ac.uk/CW1/WattTours#lendmarkOf">isLandmarkOf</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#London" title="http://hw.ac.uk/CW1/WattTours#London">london</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Louvre">
+      <h3>Louvre<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Louvre</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#ManMade" title="http://hw.ac.uk/CW1/WattTours#ManMade">ManmadeLandmark</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#lendmarkOf" title="http://hw.ac.uk/CW1/WattTours#lendmarkOf">isLandmarkOf</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#AbuDhabi" title="http://hw.ac.uk/CW1/WattTours#AbuDhabi">Abu Dhabi</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Montepulciano">
+      <h3>montepulciano<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Montepulciano</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#belongTo" title="http://hw.ac.uk/CW1/WattTours#belongTo">belongsTo</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Italy" title="http://hw.ac.uk/CW1/WattTours#Italy">Italy</a>
+         </dd>
+         <dd>
+            <a href="#cityName" title="http://hw.ac.uk/CW1/WattTours#cityName">cityName</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"Montepulciano"^^<a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#hasID" title="http://hw.ac.uk/CW1/WattTours#hasID">has ID</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"http://www.wikidata.org/entity/Q91217"</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Palermo">
+      <h3>palermo<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Palermo</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#belongTo" title="http://hw.ac.uk/CW1/WattTours#belongTo">belongsTo</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Italy" title="http://hw.ac.uk/CW1/WattTours#Italy">Italy</a>
+         </dd>
+         <dd>
+            <a href="#cityName" title="http://hw.ac.uk/CW1/WattTours#cityName">cityName</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"Palermo"^^<a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#hasID" title="http://hw.ac.uk/CW1/WattTours#hasID">has ID</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"http://www.wikidata.org/entity/Q2656"</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Rome">
+      <h3>Rome<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Rome</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasLandMark" title="http://hw.ac.uk/CW1/WattTours#hasLandMark">hasLandmark</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Coliseum" title="http://hw.ac.uk/CW1/WattTours#Coliseum">Colosseum</a>
+         </dd>
+         <dd>
+            <a href="#isCapital" title="http://hw.ac.uk/CW1/WattTours#isCapital">isCapitalOf</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Italy" title="http://hw.ac.uk/CW1/WattTours#Italy">Italy</a>
+         </dd>
+         <dd>
+            <a href="#cityName" title="http://hw.ac.uk/CW1/WattTours#cityName">cityName</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"Roma"</span>
+         </dd>
+         <dd>
+            <a href="#hasID" title="http://hw.ac.uk/CW1/WattTours#hasID">has ID</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"http://www.wikidata.org/entity/Q220"</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SantaCruz">
+      <h3>Santa Cruz<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#SantaCruz</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#belongTo" title="http://hw.ac.uk/CW1/WattTours#belongTo">belongsTo</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Bolivia" title="http://hw.ac.uk/CW1/WattTours#Bolivia">Bolivia</a>
+         </dd>
+         <dd>
+            <a href="#cityName" title="http://hw.ac.uk/CW1/WattTours#cityName">cityName</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"Santa Cruz"</span>
+         </dd>
+         <dd>
+            <a href="#hasID" title="http://hw.ac.uk/CW1/WattTours#hasID">has ID</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"http://www.wikidata.org/entity/Q170688"</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ShZayedMosque">
+      <h3>Shaikh Zayed Mosque<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#ShZayedMosque</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#ManMade" title="http://hw.ac.uk/CW1/WattTours#ManMade">ManmadeLandmark</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#lendmarkOf" title="http://hw.ac.uk/CW1/WattTours#lendmarkOf">isLandmarkOf</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#AbuDhabi" title="http://hw.ac.uk/CW1/WattTours#AbuDhabi">Abu Dhabi</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Sharjah">
+      <h3>sharjah<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Sharjah</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#belongTo" title="http://hw.ac.uk/CW1/WattTours#belongTo">belongsTo</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#UAE" title="http://hw.ac.uk/CW1/WattTours#UAE">United Arab Emirates</a>
+         </dd>
+         <dd>
+            <a href="#hasLandMark" title="http://hw.ac.uk/CW1/WattTours#hasLandMark">hasLandmark</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#HajarWadi" title="http://hw.ac.uk/CW1/WattTours#HajarWadi">Hajar Wadi</a>
+         </dd>
+         <dd>
+            <a href="#hasLandMark" title="http://hw.ac.uk/CW1/WattTours#hasLandMark">hasLandmark</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#SharjahFort" title="http://hw.ac.uk/CW1/WattTours#SharjahFort">sharjah fort</a>
+         </dd>
+         <dd>
+            <a href="#cityName" title="http://hw.ac.uk/CW1/WattTours#cityName">cityName</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"Sharjah"^^<a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#hasID" title="http://hw.ac.uk/CW1/WattTours#hasID">has ID</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"http://www.wikidata.org/entity/Q289693"</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SharjahFort">
+      <h3>sharjah fort<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#SharjahFort</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#ManMade" title="http://hw.ac.uk/CW1/WattTours#ManMade">ManmadeLandmark</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#lendmarkOf" title="http://hw.ac.uk/CW1/WattTours#lendmarkOf">isLandmarkOf</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Sharjah" title="http://hw.ac.uk/CW1/WattTours#Sharjah">sharjah</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Siena">
+      <h3>siena<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Siena</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#belongTo" title="http://hw.ac.uk/CW1/WattTours#belongTo">belongsTo</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Italy" title="http://hw.ac.uk/CW1/WattTours#Italy">Italy</a>
+         </dd>
+         <dd>
+            <a href="#hasLandMark" title="http://hw.ac.uk/CW1/WattTours#hasLandMark">hasLandmark</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#WYards" title="http://hw.ac.uk/CW1/WattTours#WYards">wineYards</a>
+         </dd>
+         <dd>
+            <a href="#cityName" title="http://hw.ac.uk/CW1/WattTours#cityName">cityName</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"Siena"^^<a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#hasID" title="http://hw.ac.uk/CW1/WattTours#hasID">has ID</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"http://www.wikidata.org/entity/Q2751"</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Tiwanaku">
+      <h3>tiwanaku<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Tiwanaku</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#ManMade" title="http://hw.ac.uk/CW1/WattTours#ManMade">ManmadeLandmark</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasLandMark" title="http://hw.ac.uk/CW1/WattTours#hasLandMark">hasLandmark</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Tiwanaku" title="http://hw.ac.uk/CW1/WattTours#Tiwanaku">tiwanaku</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Tour1">
+      <h3>tour1<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Tour1</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Opt1" title="http://hw.ac.uk/CW1/WattTours#Opt1">BasicTour</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasDuration" title="http://hw.ac.uk/CW1/WattTours#hasDuration">hasDuration</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#3Days" title="http://hw.ac.uk/CW1/WattTours#3Days">3 days</a>
+         </dd>
+         <dd>
+            <a href="#visits" title="http://hw.ac.uk/CW1/WattTours#visits">isVisiting</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Montepulciano" title="http://hw.ac.uk/CW1/WattTours#Montepulciano">montepulciano</a>
+         </dd>
+         <dd>
+            <a href="#visits" title="http://hw.ac.uk/CW1/WattTours#visits">isVisiting</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Rome" title="http://hw.ac.uk/CW1/WattTours#Rome">Rome</a>
+         </dd>
+         <dd>
+            <a href="#visits" title="http://hw.ac.uk/CW1/WattTours#visits">isVisiting</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Siena" title="http://hw.ac.uk/CW1/WattTours#Siena">siena</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Tour2">
+      <h3>tour2<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Tour2</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Opt3" title="http://hw.ac.uk/CW1/WattTours#Opt3">LongTour</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasDuration" title="http://hw.ac.uk/CW1/WattTours#hasDuration">hasDuration</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#1Week" title="http://hw.ac.uk/CW1/WattTours#1Week">1 week</a>
+         </dd>
+         <dd>
+            <a href="#visits" title="http://hw.ac.uk/CW1/WattTours#visits">isVisiting</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Florence" title="http://hw.ac.uk/CW1/WattTours#Florence">Florence</a>
+         </dd>
+         <dd>
+            <a href="#visits" title="http://hw.ac.uk/CW1/WattTours#visits">isVisiting</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Genoa" title="http://hw.ac.uk/CW1/WattTours#Genoa">Genova</a>
+         </dd>
+         <dd>
+            <a href="#visits" title="http://hw.ac.uk/CW1/WattTours#visits">isVisiting</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Rome" title="http://hw.ac.uk/CW1/WattTours#Rome">Rome</a>
+         </dd>
+         <dd>
+            <a href="#visits" title="http://hw.ac.uk/CW1/WattTours#visits">isVisiting</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Turin" title="http://hw.ac.uk/CW1/WattTours#Turin">Turin</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Tour3">
+      <h3>Tour3<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Tour3</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Opt2" title="http://hw.ac.uk/CW1/WattTours#Opt2">ShortTour</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasDuration" title="http://hw.ac.uk/CW1/WattTours#hasDuration">hasDuration</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#5Days" title="http://hw.ac.uk/CW1/WattTours#5Days">5 days</a>
+         </dd>
+         <dd>
+            <a href="#visits" title="http://hw.ac.uk/CW1/WattTours#visits">isVisiting</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#AbuDhabi" title="http://hw.ac.uk/CW1/WattTours#AbuDhabi">Abu Dhabi</a>
+         </dd>
+         <dd>
+            <a href="#visits" title="http://hw.ac.uk/CW1/WattTours#visits">isVisiting</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Dubai" title="http://hw.ac.uk/CW1/WattTours#Dubai">Dubai</a>
+         </dd>
+         <dd>
+            <a href="#visits" title="http://hw.ac.uk/CW1/WattTours#visits">isVisiting</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Sharjah" title="http://hw.ac.uk/CW1/WattTours#Sharjah">sharjah</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Tour4">
+      <h3>tour4<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Tour4</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Opt1" title="http://hw.ac.uk/CW1/WattTours#Opt1">BasicTour</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasDuration" title="http://hw.ac.uk/CW1/WattTours#hasDuration">hasDuration</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#3Days" title="http://hw.ac.uk/CW1/WattTours#3Days">3 days</a>
+         </dd>
+         <dd>
+            <a href="#visits" title="http://hw.ac.uk/CW1/WattTours#visits">isVisiting</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#LaPaz" title="http://hw.ac.uk/CW1/WattTours#LaPaz">La Paz</a>
+         </dd>
+         <dd>
+            <a href="#visits" title="http://hw.ac.uk/CW1/WattTours#visits">isVisiting</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#SantaCruz" title="http://hw.ac.uk/CW1/WattTours#SantaCruz">Santa Cruz</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Turin">
+      <h3>Turin<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#Turin</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#City" title="http://hw.ac.uk/CW1/WattTours#City">City</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#belongTo" title="http://hw.ac.uk/CW1/WattTours#belongTo">belongsTo</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Italy" title="http://hw.ac.uk/CW1/WattTours#Italy">Italy</a>
+         </dd>
+         <dd>
+            <a href="#cityName" title="http://hw.ac.uk/CW1/WattTours#cityName">cityName</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"Torino"</span>
+         </dd>
+         <dd>
+            <a href="#hasID" title="http://hw.ac.uk/CW1/WattTours#hasID">has ID</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"http://www.wikidata.org/entity/Q495"</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="UAE">
+      <h3>United Arab Emirates<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#UAE</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Country" title="http://hw.ac.uk/CW1/WattTours#Country">Country</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasCapital" title="http://hw.ac.uk/CW1/WattTours#hasCapital">hasCapitalCity</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#AbuDhabi" title="http://hw.ac.uk/CW1/WattTours#AbuDhabi">Abu Dhabi</a>
+         </dd>
+         <dd>
+            <a href="#hasCity" title="http://hw.ac.uk/CW1/WattTours#hasCity">hasCity</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Dubai" title="http://hw.ac.uk/CW1/WattTours#Dubai">Dubai</a>
+         </dd>
+         <dd>
+            <a href="#hasCity" title="http://hw.ac.uk/CW1/WattTours#hasCity">hasCity</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Sharjah" title="http://hw.ac.uk/CW1/WattTours#Sharjah">sharjah</a>
+         </dd>
+         <dd>
+            <a href="#countryName" title="http://hw.ac.uk/CW1/WattTours#countryName">countryName</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"United Arab Emirates"</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="UK">
+      <h3>United Kingdom<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#UK</p>
+      <dl class="description">
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasCapital" title="http://hw.ac.uk/CW1/WattTours#hasCapital">hasCapitalCity</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#London" title="http://hw.ac.uk/CW1/WattTours#London">london</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="WYards">
+      <h3>wineYards<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://hw.ac.uk/CW1/WattTours#WYards</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Natural" title="http://hw.ac.uk/CW1/WattTours#Natural">NaturalLandmark</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
